@@ -1,10 +1,10 @@
 /*
- * Vurb.me site config — edit the name, prices and links here.
+ * Vurb site config — edit the name, prices and links here.
  * Every price and link on the site is read from this object.
  * Any checkout link set to "#" shows "Coming soon" instead of a checkout.
  */
 window.VURB_CONFIG = {
-  name: "Vurb.me", // product name, rendered into every [data-name] element
+  name: "Vurb", // product name, rendered into every [data-name] element
   currency: "$",
 
   prices: {

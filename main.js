@@ -14,7 +14,7 @@
   var prices = cfg.prices || {};
 
   // Product name
-  var DEFAULT_NAME = "Vurb.me";
+  var DEFAULT_NAME = "Vurb";
   var name = cfg.name || DEFAULT_NAME;
   if (name !== DEFAULT_NAME) {
     $$("[data-name]").forEach(function (el) { el.textContent = name; });
