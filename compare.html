@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb compared — built-in dictation and other apps</title>
+  <meta name="description" content="How Vurb compares with built-in OS dictation and with other dictation apps' listed prices.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb compared — built-in dictation and other apps">
+  <meta property="og:description" content="How Vurb compares with built-in OS dictation and with other dictation apps' listed prices.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/compare.html">
+  <link rel="canonical" href="https://vurb.me/compare.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Vurb compared</h1>
+        <p class="lede">How Vurb differs from the dictation built into your operating system, and how its prices compare with other dictation apps.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vurb-and-built-in-dictation-title">
+      <div class="container">
+        <h2 id="vurb-and-built-in-dictation-title">Vurb and built-in dictation</h2>
+        
+        <div class="two-col">
+          <div></div>
+          <div class="prose">
+            <p>macOS and Windows have dictation built in. If you use it now and then and it does what you need, you may not need Vurb. Features differ by version, so check what yours does.</p>
+            <p>Here's what Vurb does, so you can compare:</p>
+          </div>
+        </div>
+        <dl class="features">
+          <div><dt>Hold-to-talk with one key</dt><dd>Hold a key, talk, let go, in any app. Double-tap for hands-free, Esc to cancel.</dd></div>
+          <div><dt>Local Whisper models</dt><dd>OpenAI Whisper via whisper.cpp, running on your computer. You choose the model: Fastest, Fast, Balanced or Best.</dd></div>
+          <div><dt>Custom vocabulary</dt><dd>Your names and terms, spelled your way.</dd></div>
+          <div><dt>History and stats</dt><dd>Search everything you've dictated; see words per minute, streaks and time saved.</dd></div>
+          <div><dt>Optional AI cleanup</dt><dd>Punctuation, filler removal and self-corrections, with your own Claude key.</dd></div>
+          <div><dt>Same app everywhere</dt><dd>macOS, Windows and Linux, with the same settings and behaviour.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" id="prices" aria-labelledby="compare-title">
+      <div class="container">
+        <h2 id="compare-title">How the prices compare</h2>
+        <p class="muted intro">What other dictation apps list on their pricing pages, next to ours.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="compare-title">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"><span data-name>Vurb</span></th>
+                <th scope="col">Weesper Neon Flow</th>
+                <th scope="col">Wispr Flow</th>
+                <th scope="col">Superwhisper</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Free tier</th>
+                <td><span data-free-words>2,000</span> words/week</td>
+                <td>1,500 words/week</td>
+                <td>2,000 words/week (desktop)</td>
+                <td>See their site</td>
+              </tr>
+              <tr>
+                <th scope="row">Pro, monthly</th>
+                <td><span data-price="proMonthly">$4.99</span>/mo</td>
+                <td>€5/mo</td>
+                <td>$15/mo</td>
+                <td>$8.49/mo</td>
+              </tr>
+              <tr>
+                <th scope="row">Pro, yearly</th>
+                <td><span data-price="proYearly">$39</span>/yr</td>
+                <td>€45/yr</td>
+                <td>$144/yr</td>
+                <td>$84.99/yr</td>
+              </tr>
+              <tr>
+                <th scope="row">Teams</th>
+                <td><span data-price="growthYearly">$9</span>/user/mo yearly, <span data-price="growthMonthly">$12</span> monthly</td>
+                <td>See their site</td>
+                <td>$18/user/mo yearly, $23 monthly (reported Oct 2026)</td>
+                <td>See their site</td>
+              </tr>
+              <tr>
+                <th scope="row">Enterprise</th>
+                <td>Custom</td>
+                <td>See their site</td>
+                <td>Custom</td>
+                <td>See their site</td>
+              </tr>
+              <tr>
+                <th scope="row">Refund window</th>
+                <td><span data-refund-days>30</span> days</td>
+                <td>7 days</td>
+                <td>See their site</td>
+                <td>See their site</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">
+          Prices as listed on each company's public pricing page in October 2026, in the currency they list; check their sites for current pricing.
+          Wispr Flow's team pricing is as reported in October 2026 by a third-party tracker.
+          Weesper Neon Flow (€99) and Superwhisper ($249.99) also list lifetime licenses; we don't sell one.
+          Sources: <a href="https://weesperneonflow.ai/en/pricing" rel="noopener" target="_blank">weesperneonflow.ai/en/pricing</a>,
+          <a href="https://wisprflow.ai/pricing" rel="noopener" target="_blank">wisprflow.ai/pricing</a>,
+          <a href="https://www.usagepricing.com/blueprint/activity/wisprflow-2026-10-05-growth-enterprise-split" rel="noopener" target="_blank">usagepricing.com</a> (Wispr Flow teams),
+          <a href="https://superwhisper.com" rel="noopener" target="_blank">superwhisper.com</a>.
+          Weesper Neon Flow, Wispr Flow and Superwhisper are trademarks of their respective owners. <span data-name>Vurb</span> is not affiliated with or endorsed by them.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="download.html">Download</a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

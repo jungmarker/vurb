@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb for developers</title>
+  <meta name="description" content="Use Vurb to dictate commit messages, PR descriptions, code review comments and prompts for coding assistants, in any app.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb for developers">
+  <meta property="og:description" content="Use Vurb to dictate commit messages, PR descriptions, code review comments and prompts for coding assistants, in any app.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/for/developers.html">
+  <link rel="canonical" href="https://vurb.me/for/developers.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <script src="../layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="../use-cases.html">Use cases</a> / Developers</p>
+        <h1>Write the prose around your code by talking</h1>
+        <p class="lede">Code is typed. Everything around it — commit messages, PR descriptions, review comments, issue updates, prompts — is just writing, and talking is faster.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="workflows-title">
+      <div class="container">
+        <h2 id="workflows-title">Workflows</h2>
+        <p class="section-lede">Examples of what you'd say and what ends up in the text field.</p>
+        <div class="workflows">
+          <div class="workflow">
+            <div><h3>Commit messages</h3><p>Hold the key in your terminal or Git client and describe what changed.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Fix the race condition in the upload queue by locking before we read the retry count”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Fix the race condition in the upload queue by locking before we read the retry count</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Pull request descriptions</h3><p>Explain the why while it's still in your head, then edit.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“This replaces the polling loop with a webhook. Polling was costing us about two hundred requests a minute and still missed updates.”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">This replaces the polling loop with a webhook. Polling was costing us about 200 requests a minute and still missed updates.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Prompts for coding assistants</h3><p>Long, specific prompts get better results and are tedious to type.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Refactor the settings module so each section is its own file, keep the public API the same, and add tests for the migration code”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Refactor the settings module so each section is its own file, keep the public API the same, and add tests for the migration code.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Review comments</h3><p>Leave the thoughtful comment instead of the short one.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“um I think this works but we should probably handle the empty list case, uh, otherwise the reduce throws”</p></div>
+              <div class="example-row"><span class="example-label">Typed <span class="tag">with AI cleanup</span></span><p class="example-typed">I think this works, but we should probably handle the empty list case. Otherwise the reduce throws.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="useful-features-title">
+      <div class="container">
+        <h2 id="useful-features-title">Useful features</h2>
+        
+        <div class="cards cols-3">
+          <div class="card"><h3>Custom vocabulary</h3><p>Add library names, service names and acronyms so they come out right.</p></div>
+          <div class="card"><h3>Works in any app</h3><p>Terminal, IDE, browser, chat. If there's a cursor, it types there.</p></div>
+          <div class="card"><h3>Local by default</h3><p>Your audio stays on your machine, which matters when you're talking about unreleased code.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="../download.html">Download</a>
+          <a class="quiet-link" href="../pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

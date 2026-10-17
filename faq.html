@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ — Vurb</title>
+  <meta name="description" content="Answers about Vurb: how it works, privacy, languages, pricing, teams and troubleshooting.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="FAQ — Vurb">
+  <meta property="og:description" content="Answers about Vurb: how it works, privacy, languages, pricing, teams and troubleshooting.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/faq.html">
+  <link rel="canonical" href="https://vurb.me/faq.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Frequently asked questions</h1>
+        <p class="lede">Short answers. If yours isn't here, email <a href="mailto:hello@vurb.me">hello@vurb.me</a>.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container faq-wrap">
+          <div class="faq-group">
+            <h3>General</h3>
+            <div class="faq">
+          <details>
+            <summary>What is Vurb?</summary>
+            <p>A dictation app. Hold a key, talk, let go, and what you said is typed wherever your cursor is.</p>
+          </details>
+          <details>
+            <summary>Which apps does it work in?</summary>
+            <p>Any app with a text cursor. It types into whatever has focus.</p>
+          </details>
+          <details>
+            <summary>Which operating systems?</summary>
+            <p>macOS 13+, Windows 10/11 (x64) and Linux (x64, X11). See <a href="download.html">Download</a>.</p>
+          </details>
+          <details>
+            <summary>Does it work offline?</summary>
+            <p>Yes. Once the speech model is downloaded, dictation doesn't need the internet. AI cleanup, if you turn it on, does.</p>
+          </details>
+            </div>
+          </div>
+          <div class="faq-group">
+            <h3>Privacy</h3>
+            <div class="faq">
+          <details>
+            <summary>Does my audio leave my computer?</summary>
+            <p>No. It's transcribed on your computer and discarded.</p>
+          </details>
+          <details>
+            <summary>Where are my transcripts stored?</summary>
+            <p>Only on your computer, in the app's data folder. You can clear your history in the app.</p>
+          </details>
+          <details>
+            <summary>What does AI cleanup send?</summary>
+            <p>Only the transcribed text and your custom vocabulary, directly to Anthropic with your own API key. Never audio. It's off by default.</p>
+          </details>
+          <details>
+            <summary>Do you use analytics?</summary>
+            <p>Not on this site, and the app doesn't send us your dictations or stats. Details on the <a href="security.html">security page</a>.</p>
+          </details>
+            </div>
+          </div>
+          <div class="faq-group">
+            <h3>Languages</h3>
+            <div class="faq">
+          <details>
+            <summary>Which languages are supported?</summary>
+            <p>90+, through Whisper. The language is detected automatically.</p>
+          </details>
+          <details>
+            <summary>Can I mix languages?</summary>
+            <p>Yes. Switching between English and Spanish, for example, works without changing settings. Use a multilingual model (Fast, Balanced or Best), not Fastest, which is English only.</p>
+          </details>
+          <details>
+            <summary>Does it translate?</summary>
+            <p>No. It types what you said in the language you said it. AI cleanup never translates either.</p>
+          </details>
+            </div>
+          </div>
+          <div class="faq-group">
+            <h3>Pricing and billing</h3>
+            <div class="faq">
+          <details>
+            <summary>Is the free plan really free?</summary>
+            <p>Yes. <span data-free-words>2,000</span> words a week, no card, no account.</p>
+          </details>
+          <details>
+            <summary>What does Pro add?</summary>
+            <p>Unlimited words, up to <span data-device-limit>3</span> computers, priority support and early access. Built-in AI cleanup is coming soon.</p>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <p>Pro and Growth have a <span data-refund-days>30</span>-day money-back guarantee.</p>
+          </details>
+          <details>
+            <summary>Who processes payments?</summary>
+            <p>Lemon Squeezy, as merchant of record.</p>
+          </details>
+            </div>
+          </div>
+          <div class="faq-group">
+            <h3>Teams</h3>
+            <div class="faq">
+          <details>
+            <summary>Do you have team plans?</summary>
+            <p>Growth (per seat, <span data-min-seats>3</span>-seat minimum, one invoice) and Enterprise (custom). See <a href="business.html">Business</a>.</p>
+          </details>
+          <details>
+            <summary>Can you go through our security review?</summary>
+            <p>Yes, on Enterprise, along with DPA support. We don't hold SOC 2 or similar certifications.</p>
+          </details>
+          <details>
+            <summary>Do you support SSO or MDM?</summary>
+            <p>Not yet. Both are on the roadmap.</p>
+          </details>
+            </div>
+          </div>
+          <div class="faq-group">
+            <h3>Troubleshooting</h3>
+            <div class="faq">
+          <details>
+            <summary>Nothing gets typed.</summary>
+            <p>On a Mac, check System Settings → Privacy &amp; Security → Accessibility and make sure Vurb is on. If it's on and still not working, turn it off and on again. Without this permission the text is copied to your clipboard instead.</p>
+          </details>
+          <details>
+            <summary>It doesn't hear me.</summary>
+            <p>Check that Vurb is allowed to use the microphone in your OS privacy settings, and that the right input device is selected.</p>
+          </details>
+          <details>
+            <summary>The key doesn't work on Linux.</summary>
+            <p>Vurb needs an X11 session. Wayland isn't supported yet.</p>
+          </details>
+          <details>
+            <summary>More help</summary>
+            <p>See <a href="support.html">Support</a>.</p>
+          </details>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

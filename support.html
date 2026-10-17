@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Vurb</title>
+  <meta name="description" content="Get help with Vurb: permissions, microphone, pasting, Linux X11 and installer warnings.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Support — Vurb">
+  <meta property="og:description" content="Get help with Vurb: permissions, microphone, pasting, Linux X11 and installer warnings.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/support.html">
+  <link rel="canonical" href="https://vurb.me/support.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Support</h1>
+        <p class="lede">Email <a href="mailto:hello@vurb.me">hello@vurb.me</a> and a person will reply. Most problems are one of the ones below.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="troubleshooting-title">
+      <div class="container">
+        <h2 id="troubleshooting-title">Troubleshooting</h2>
+        
+        <div class="faq">
+          <details>
+            <summary>Text isn't typed into the app (Mac)</summary>
+            <p>Vurb needs Accessibility permission to type. Open System Settings → Privacy &amp; Security → Accessibility and turn Vurb on. If it's already on, select it, remove it with the minus button, then add it again — this often happens after an update. Until it's granted, Vurb copies the text to your clipboard so you can paste it.</p>
+          </details>
+          <details>
+            <summary>Vurb doesn't hear anything</summary>
+            <p>Make sure Vurb is allowed to use the microphone (macOS: Privacy &amp; Security → Microphone; Windows: Settings → Privacy &amp; security → Microphone). Then check that the right input device is selected in your system sound settings.</p>
+          </details>
+          <details>
+            <summary>The pill appears but nothing is pasted</summary>
+            <p>A few apps don't accept simulated typing. The text is still saved in your history, so you can copy it from there.</p>
+          </details>
+          <details>
+            <summary>The key does nothing on Linux</summary>
+            <p>Vurb listens for keys through X11. If you're on a Wayland session, log out and choose an X11 session at the login screen.</p>
+          </details>
+          <details>
+            <summary>Transcription is slow</summary>
+            <p>Switch to a smaller model in settings. Balanced is a good choice on most computers. Best is meant for Apple Silicon Macs.</p>
+          </details>
+          <details>
+            <summary>macOS or Windows won't open the installer</summary>
+            <p>The beta installers aren't signed yet. See <a href="download.html">Download</a> for how to open them.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="still-stuck-title">
+      <div class="container">
+        <h2 id="still-stuck-title">Still stuck?</h2>
+        
+        <div class="prose">
+          <p>Email <a href="mailto:hello@vurb.me">hello@vurb.me</a> with your OS and version, the Vurb version, and what you expected to happen. Check the <a href="faq.html">FAQ</a> too.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

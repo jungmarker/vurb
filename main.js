@@ -40,27 +40,10 @@
     if (v) el.href = v;
   });
 
-  // Theme toggle
-  var root = document.documentElement;
-  var toggle = $("#theme-toggle");
-  function syncToggle() {
-    var dark = root.getAttribute("data-theme") === "dark";
-    toggle.textContent = dark ? "Light" : "Dark";
-    toggle.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
-  }
-  if (toggle) {
-    syncToggle();
-    toggle.addEventListener("click", function () {
-      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      try { localStorage.setItem("theme", next); } catch (e) {}
-      syncToggle();
-    });
-  }
-
   // Toast
-  var toast = $("#toast"), toastTimer;
+  var toastTimer;
   function showToast(msg) {
+    var toast = $("#toast"); // injected by layout.js
     if (!toast) return;
     toast.textContent = msg;
     toast.classList.add("show");

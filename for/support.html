@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb for customer support</title>
+  <meta name="description" content="Use Vurb to dictate ticket replies, internal notes and escalations in any help desk.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb for customer support">
+  <meta property="og:description" content="Use Vurb to dictate ticket replies, internal notes and escalations in any help desk.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/for/support.html">
+  <link rel="canonical" href="https://vurb.me/for/support.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <script src="../layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="../use-cases.html">Use cases</a> / Customer support</p>
+        <h1>Clear the queue with your voice</h1>
+        <p class="lede">Good support replies are long and specific. Say them instead of typing them, in whichever help desk you use.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="workflows-title">
+      <div class="container">
+        <h2 id="workflows-title">Workflows</h2>
+        <p class="section-lede">Examples of what you'd say and what ends up in the text field.</p>
+        <div class="workflows">
+          <div class="workflow">
+            <div><h3>Ticket replies</h3><p>Talk through the fix, then read it over before sending.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Thanks for the details. It looks like the export is timing out because the file is over the limit. If you split it by month it should go through”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Thanks for the details. It looks like the export is timing out because the file is over the limit. If you split it by month, it should go through.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Internal notes</h3><p>Context for the next person who picks up the ticket.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Customer already tried clearing cache and reinstalling, issue only happens on the Windows app”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Customer already tried clearing cache and reinstalling. Issue only happens on the Windows app.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Escalations</h3><p>A complete write-up for engineering in one go.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Three customers reported the same sync error since this morning, all on version two point three”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Three customers reported the same sync error since this morning, all on version 2.3.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Replies in other languages</h3><p>Vurb detects the language you speak; it doesn't translate.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Gracias por escribirnos. Ya hemos reenviado su factura al correo correcto.”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Gracias por escribirnos. Ya hemos reenviado su factura al correo correcto.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="useful-features-title">
+      <div class="container">
+        <h2 id="useful-features-title">Useful features</h2>
+        
+        <div class="cards cols-3">
+          <div class="card"><h3>Custom vocabulary</h3><p>Product names, feature names and error codes spelled consistently.</p></div>
+          <div class="card"><h3>90+ languages</h3><p>Detected automatically. Answer in the language you're speaking.</p></div>
+          <div class="card"><h3>Esc to cancel</h3><p>Started talking into the wrong field? Press Esc and nothing is typed.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="../download.html">Download</a>
+          <a class="quiet-link" href="../pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

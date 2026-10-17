@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb for lawyers</title>
+  <meta name="description" content="Vurb transcribes speech on your own computer. Use it to dictate memos, letters and file notes without sending audio to a transcription service.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb for lawyers">
+  <meta property="og:description" content="Vurb transcribes speech on your own computer. Use it to dictate memos, letters and file notes without sending audio to a transcription service.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/for/legal.html">
+  <link rel="canonical" href="https://vurb.me/for/legal.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <script src="../layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="../use-cases.html">Use cases</a> / Lawyers</p>
+        <h1>Dictation that keeps the audio on your machine</h1>
+        <p class="lede">Vurb transcribes on your own computer, so recordings of what you say about a matter aren't sent to a transcription service. Whether that's enough for your obligations is for you and your firm to decide.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="workflows-title">
+      <div class="container">
+        <h2 id="workflows-title">Workflows</h2>
+        <p class="section-lede">Examples of what you'd say and what ends up in the text field.</p>
+        <div class="workflows">
+          <div class="workflow">
+            <div><h3>Memos</h3><p>Talk through the analysis in your document editor.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“The key question is whether the notice was delivered within the thirty day window set out in section four”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">The key question is whether the notice was delivered within the 30-day window set out in section 4.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Correspondence</h3><p>Draft letters and emails in your own words.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Further to our call this morning, please find attached the revised schedule for your review”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Further to our call this morning, please find attached the revised schedule for your review.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>File notes</h3><p>Record what happened at a meeting while it's fresh.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Client confirmed they did not receive the amended contract until March”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Client confirmed they did not receive the amended contract until March.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Time entries</h3><p>Short descriptions for billing.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Review and revise draft settlement agreement, call with opposing counsel”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Review and revise draft settlement agreement; call with opposing counsel.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="useful-features-title">
+      <div class="container">
+        <h2 id="useful-features-title">Useful features</h2>
+        
+        <div class="cards cols-3">
+          <div class="card"><h3>On-device transcription</h3><p>Audio is transcribed locally and discarded. It isn't sent to us or anyone else.</p></div>
+          <div class="card"><h3>Local history</h3><p>Transcripts and history are stored on your computer only. You can clear them.</p></div>
+          <div class="card"><h3>AI cleanup stays off</h3><p>Cleanup is off by default. If you enable it, the text goes to Anthropic under your own key, so leave it off for sensitive work if your policies require.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="../download.html">Download</a>
+          <a class="quiet-link" href="../pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

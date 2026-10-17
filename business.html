@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb for teams — Growth and Enterprise</title>
+  <meta name="description" content="Growth and Enterprise plans for Vurb: centralized billing, seat management, on-device transcription, security review and DPA support.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb for teams — Growth and Enterprise">
+  <meta property="og:description" content="Growth and Enterprise plans for Vurb: centralized billing, seat management, on-device transcription, security review and DPA support.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/business.html">
+  <link rel="canonical" href="https://vurb.me/business.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Vurb for teams</h1>
+        <p class="lede">Growth puts the whole team on Pro with one invoice. Enterprise adds contracts, security review and a person to talk to. Transcription is on-device on every plan.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="growth-title">
+      <div class="container">
+        <h2 id="growth-title">Growth</h2>
+        
+        <div class="two-col">
+          <div><p class="amount" data-plan-amount="growth">$9</p><p class="muted small" data-plan-note="growth">per user per month, billed yearly · 3-seat minimum</p></div>
+          <div>        <dl class="features single">
+          <div><dt>Every seat gets Pro</dt><dd>Unlimited words, up to 3 computers per person, priority support, early access.</dd></div>
+          <div><dt>Centralized billing</dt><dd>One invoice for the team instead of expense reports.</dd></div>
+          <div><dt>Seat management</dt><dd>Add or remove seats anytime.</dd></div>
+          <div><dt>Onboarding help</dt><dd>We'll help get your team set up.</dd></div>
+          <div><dt>Shared team vocabulary <span class="tag">coming soon</span></dt><dd>One list of names and terms for everyone.</dd></div>
+          <div><dt>Admin dashboard <span class="tag">coming soon</span></dt><dd>See and manage seats in one place.</dd></div>
+        </dl>
+            <p class="more"><a class="btn" href="#" data-checkout="growth">Start team trial</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="enterprise-title">
+      <div class="container">
+        <h2 id="enterprise-title">Enterprise</h2>
+        
+        <div class="two-col">
+          <div><p class="amount">Custom</p><p class="muted small">Priced for your organization</p></div>
+          <div>        <dl class="features single">
+          <div><dt>Everything in Growth</dt><dd>For every seat.</dd></div>
+          <div><dt>On-device transcription</dt><dd>Employee audio never leaves their computers. Useful for teams that handle sensitive information.</dd></div>
+          <div><dt>Volume discounts</dt><dd>Pricing that reflects the size of the rollout.</dd></div>
+          <div><dt>Procurement</dt><dd>Invoicing, purchase orders and annual contracts.</dd></div>
+          <div><dt>Security review and DPA support</dt><dd>We'll answer your questionnaire and work through a data processing agreement.</dd></div>
+          <div><dt>A named contact</dt><dd>A dedicated success manager and an SLA.</dd></div>
+          <div><dt>SSO / SAML <span class="tag">on the roadmap</span></dt><dd></dd></div>
+          <div><dt>MDM deployment <span class="tag">on the roadmap</span></dt><dd></dd></div>
+        </dl>
+            <p class="more"><a class="btn" href="mailto:sales@vurb.me" data-checkout="enterprise">Talk to sales</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="what-your-security-team-will-ask-title">
+      <div class="container">
+        <h2 id="what-your-security-team-will-ask-title">What your security team will ask</h2>
+        
+        <div class="two-col">
+          <div></div>
+          <div class="prose">
+            <p>Speech is transcribed on each employee's computer with a local Whisper model. Audio isn't uploaded. Transcripts and history stay in the app's local folder.</p>
+            <p>AI cleanup is off by default. If someone turns it on, the transcribed text is sent to Anthropic using an API key they provide.</p>
+            <p>We don't hold SOC 2, ISO 27001 or HIPAA certifications. We're happy to go through your review and explain exactly what the app does.</p>
+            <p><a href="security.html">Read the data flow</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Talk to us</h2>
+          <p class="muted">Tell us roughly how many seats and what you need reviewed.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="mailto:sales@vurb.me" data-checkout="enterprise">Talk to sales</a>
+          <a class="quiet-link" href="pricing.html">Compare plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

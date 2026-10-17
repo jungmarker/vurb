@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — Vurb</title>
+  <meta name="description" content="Vurb pricing: Free (2,000 words/week), Pro ($4.99/month or $39/year), Growth for teams and custom Enterprise plans.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Pricing — Vurb">
+  <meta property="og:description" content="Vurb pricing: Free (2,000 words/week), Pro ($4.99/month or $39/year), Growth for teams and custom Enterprise plans.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/pricing.html">
+  <link rel="canonical" href="https://vurb.me/pricing.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <h1 id="pricing-title" class="h1-inline">Pricing</h1>
+            <p class="muted">Pro and Growth come with a <span data-refund-days>30</span>-day money-back guarantee.</p>
+          </div>
+          <div class="billing" role="group" aria-label="Billing period">
+            <button type="button" data-billing="monthly" aria-pressed="false">Monthly</button>
+            <button type="button" data-billing="yearly" aria-pressed="true">Yearly <span class="muted" data-save-badge>(save up to 35%)</span></button>
+          </div>
+        </div>
+
+        <div class="plans">
+          <article class="plan" aria-labelledby="plan-free">
+            <h3 id="plan-free">Free</h3>
+            <p class="price"><span class="amount" data-price="free">$0</span></p>
+            <p class="price-note">Forever. No card, no account.</p>
+            <ul>
+              <li><span data-free-words>2,000</span> words a week</li>
+              <li>Local, private transcription</li>
+              <li>All 90+ languages</li>
+              <li>Hold-to-talk and hands-free</li>
+              <li>History and stats</li>
+              <li>AI cleanup with your own Claude API key</li>
+            </ul>
+            <a class="btn btn-outline" href="download.html">Download</a>
+          </article>
+
+          <article class="plan" aria-labelledby="plan-pro">
+            <h3 id="plan-pro">Pro</h3>
+            <p class="price"><span class="amount" data-plan-amount="pro">$3.25</span><span class="per">/month</span></p>
+            <p class="price-note" data-plan-note="pro">Billed $39 per year</p>
+            <ul>
+              <li>Unlimited words</li>
+              <li>Everything in Free</li>
+              <li>Up to <span data-device-limit>3</span> computers</li>
+              <li>Priority support</li>
+              <li>Early access to new features</li>
+              <li class="later">Built-in AI cleanup, no API key needed <em>(coming soon)</em></li>
+            </ul>
+            <a class="btn btn-outline" href="#" data-checkout="proYearly" data-plan-checkout="pro">Get Pro</a>
+          </article>
+
+          <article class="plan" aria-labelledby="plan-growth">
+            <h3 id="plan-growth">Growth</h3>
+            <p class="price"><span class="amount" data-plan-amount="growth">$9</span><span class="per">/user/month</span></p>
+            <p class="price-note" data-plan-note="growth">Billed yearly · <span data-min-seats>3</span>-seat minimum</p>
+            <ul>
+              <li>Everything in Pro, for every seat</li>
+              <li>One invoice, centralized billing</li>
+              <li>Add or remove seats anytime</li>
+              <li>Help onboarding your team</li>
+              <li>Priority support</li>
+              <li class="later">Shared team vocabulary <em>(coming soon)</em></li>
+              <li class="later">Admin dashboard <em>(coming soon)</em></li>
+            </ul>
+            <a class="btn" href="#" data-checkout="growth">Start team trial</a>
+          </article>
+
+          <article class="plan" aria-labelledby="plan-ent">
+            <h3 id="plan-ent">Enterprise</h3>
+            <p class="price"><span class="amount">Custom</span></p>
+            <p class="price-note">Priced for your organization</p>
+            <ul>
+              <li>Everything in Growth</li>
+              <li>100% on-device transcription. Employee audio never leaves their computers.</li>
+              <li>Volume discounts</li>
+              <li>Invoicing, POs and annual contracts</li>
+              <li>Security review and DPA support</li>
+              <li>A dedicated success manager and an SLA</li>
+              <li class="later">SSO / SAML <em>(on the roadmap)</em></li>
+              <li class="later">MDM deployment <em>(on the roadmap)</em></li>
+            </ul>
+            <a class="btn btn-outline" href="mailto:sales@vurb.me" data-checkout="enterprise">Talk to sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="compare" aria-labelledby="compare-title">
+      <div class="container">
+        <h2 id="compare-title">How the prices compare</h2>
+        <p class="muted intro">What other dictation apps list on their pricing pages, next to ours.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="compare-title">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"><span data-name>Vurb</span></th>
+                <th scope="col">Weesper Neon Flow</th>
+                <th scope="col">Wispr Flow</th>
+                <th scope="col">Superwhisper</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Free tier</th>
+                <td><span data-free-words>2,000</span> words/week</td>
+                <td>1,500 words/week</td>
+                <td>2,000 words/week (desktop)</td>
+                <td>See their site</td>
+              </tr>
+              <tr>
+                <th scope="row">Pro, monthly</th>
+                <td><span data-price="proMonthly">$4.99</span>/mo</td>
+                <td>€5/mo</td>
+                <td>$15/mo</td>
+                <td>$8.49/mo</td>
+              </tr>
+              <tr>
+                <th scope="row">Pro, yearly</th>
+                <td><span data-price="proYearly">$39</span>/yr</td>
+                <td>€45/yr</td>
+                <td>$144/yr</td>
+                <td>$84.99/yr</td>
+              </tr>
+              <tr>
+                <th scope="row">Teams</th>
+                <td><span data-price="growthYearly">$9</span>/user/mo yearly, <span data-price="growthMonthly">$12</span> monthly</td>
+                <td>See their site</td>
+                <td>$18/user/mo yearly, $23 monthly (reported Oct 2026)</td>
+                <td>See their site</td>
+              </tr>
+              <tr>
+                <th scope="row">Enterprise</th>
+                <td>Custom</td>
+                <td>See their site</td>
+                <td>Custom</td>
+                <td>See their site</td>
+              </tr>
+              <tr>
+                <th scope="row">Refund window</th>
+                <td><span data-refund-days>30</span> days</td>
+                <td>7 days</td>
+                <td>See their site</td>
+                <td>See their site</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sources">
+          Prices as listed on each company's public pricing page in October 2026, in the currency they list; check their sites for current pricing.
+          Wispr Flow's team pricing is as reported in October 2026 by a third-party tracker.
+          Weesper Neon Flow (€99) and Superwhisper ($249.99) also list lifetime licenses; we don't sell one.
+          Sources: <a href="https://weesperneonflow.ai/en/pricing" rel="noopener" target="_blank">weesperneonflow.ai/en/pricing</a>,
+          <a href="https://wisprflow.ai/pricing" rel="noopener" target="_blank">wisprflow.ai/pricing</a>,
+          <a href="https://www.usagepricing.com/blueprint/activity/wisprflow-2026-10-05-growth-enterprise-split" rel="noopener" target="_blank">usagepricing.com</a> (Wispr Flow teams),
+          <a href="https://superwhisper.com" rel="noopener" target="_blank">superwhisper.com</a>.
+          Weesper Neon Flow, Wispr Flow and Superwhisper are trademarks of their respective owners. <span data-name>Vurb</span> is not affiliated with or endorsed by them.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section" aria-labelledby="pricing-questions-title">
+      <div class="container">
+        <h2 id="pricing-questions-title">Pricing questions</h2>
+        
+        <div class="faq">
+          <details>
+            <summary>Is the free plan actually free?</summary>
+            <p>Yes. <span data-free-words>2,000</span> words a week, all languages, hold-to-talk and hands-free, history and stats. No card and no account.</p>
+          </details>
+          <details>
+            <summary>What counts as a word?</summary>
+            <p>Words Vurb types for you. The weekly count is worked out on your computer from your local history and resets each week.</p>
+          </details>
+          <details>
+            <summary>Does Pro include AI cleanup?</summary>
+            <p>Not yet. Built-in cleanup without your own key is coming. Today every plan can use cleanup with your own Claude API key.</p>
+          </details>
+          <details>
+            <summary>How does Growth billing work?</summary>
+            <p>Per seat, with a <span data-min-seats>3</span>-seat minimum. Billed monthly or yearly on one invoice. Add or remove seats anytime.</p>
+          </details>
+          <details>
+            <summary>What's the refund policy?</summary>
+            <p>Pro and Growth have a <span data-refund-days>30</span>-day money-back guarantee. Ask within <span data-refund-days>30</span> days of buying and we'll refund you in full.</p>
+          </details>
+          <details>
+            <summary>Who handles payment?</summary>
+            <p>Lemon Squeezy, our reseller and merchant of record. They handle the card details and sales tax.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

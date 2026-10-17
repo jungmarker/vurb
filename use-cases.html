@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Use cases — Vurb</title>
+  <meta name="description" content="How developers, writers, sales and support teams, students, lawyers, managers and people who need to type less use Vurb.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Use cases — Vurb">
+  <meta property="og:description" content="How developers, writers, sales and support teams, students, lawyers, managers and people who need to type less use Vurb.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/use-cases.html">
+  <link rel="canonical" href="https://vurb.me/use-cases.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Use cases</h1>
+        <p class="lede">Vurb does one thing: it turns speech into text wherever your cursor is. Here's how that plays out in different jobs.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="pick-your-line-of-work-title">
+      <div class="container">
+        <h2 id="pick-your-line-of-work-title">Pick your line of work</h2>
+        
+        <div class="cards cols-2">
+          <a class="card" href="for/developers.html"><h3>Developers</h3><p>Commit messages, PR descriptions, review comments and prompts for coding assistants.</p></a>
+          <a class="card" href="for/writers.html"><h3>Writers & creators</h3><p>First drafts, outlines, scripts and captions, at the speed you think.</p></a>
+          <a class="card" href="for/sales.html"><h3>Sales</h3><p>Call notes and follow-ups written while the conversation is still fresh.</p></a>
+          <a class="card" href="for/support.html"><h3>Customer support</h3><p>Ticket replies and internal notes without the typing backlog.</p></a>
+          <a class="card" href="for/students.html"><h3>Students</h3><p>Lecture notes, essay drafts and emails, in more than one language.</p></a>
+          <a class="card" href="for/legal.html"><h3>Lawyers</h3><p>Memos and correspondence dictated on a machine that keeps the audio.</p></a>
+          <a class="card" href="for/accessibility.html"><h3>Accessibility</h3><p>Less typing for people with RSI, limited mobility or dyslexia.</p></a>
+          <a class="card" href="for/leaders.html"><h3>Founders & managers</h3><p>Updates, feedback and decisions written down instead of put off.</p></a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="download.html">Download</a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

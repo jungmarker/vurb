@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb for accessibility</title>
+  <meta name="description" content="Vurb lets people who find typing painful or slow write by talking, in any app. Hands-free mode, your choice of key, custom vocabulary.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb for accessibility">
+  <meta property="og:description" content="Vurb lets people who find typing painful or slow write by talking, in any app. Hands-free mode, your choice of key, custom vocabulary.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/for/accessibility.html">
+  <link rel="canonical" href="https://vurb.me/for/accessibility.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <script src="../layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="../use-cases.html">Use cases</a> / Accessibility</p>
+        <h1>Type less</h1>
+        <p class="lede">If typing is painful, tiring or slow for you — because of RSI, limited hand mobility, dyslexia or anything else — Vurb lets you write by talking in any app. It's a dictation tool, not a medical device, and it doesn't control the rest of your computer by voice.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="workflows-title">
+      <div class="container">
+        <h2 id="workflows-title">Workflows</h2>
+        <p class="section-lede">Examples of what you'd say and what ends up in the text field.</p>
+        <div class="workflows">
+          <div class="workflow">
+            <div><h3>Long messages without holding a key</h3><p>Double-tap your key to start, talk as long as you need, and tap once to stop.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“I'm going to be working from home this week, I'll be on all the usual calls”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">I'm going to be working from home this week. I'll be on all the usual calls.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Spelling handled for you</h3><p>Speak the word; Whisper spells it. Add names and unusual words to custom vocabulary.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Can you send the minutes from Wednesday's meeting to Siobhan”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Can you send the minutes from Wednesday's meeting to Siobhan?</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>A key that suits your hands</h3><p>Pick whichever modifier key is easiest for you to reach.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Reminder to book the physio appointment for Thursday”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Reminder to book the physio appointment for Thursday.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Thinking out loud</h3><p>AI cleanup can remove filler and keep only the correction when you rephrase.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“The report is due on, um, Tuesday, no, actually Wednesday”</p></div>
+              <div class="example-row"><span class="example-label">Typed <span class="tag">with AI cleanup</span></span><p class="example-typed">The report is due on Wednesday.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="useful-features-title">
+      <div class="container">
+        <h2 id="useful-features-title">Useful features</h2>
+        
+        <div class="cards cols-3">
+          <div class="card"><h3>Hands-free mode</h3><p>Double-tap to keep listening without holding anything down.</p></div>
+          <div class="card"><h3>Choose your key</h3><p>fn, Option/Alt, Command/Windows, Control or Right Shift.</p></div>
+          <div class="card"><h3>Esc to cancel</h3><p>One key to throw away a recording you didn't mean.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="../download.html">Download</a>
+          <a class="quiet-link" href="../pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vurb</title>
-  <meta name="description" content="Hold a key, talk, let go. Vurb types what you said wherever your cursor is. Transcription runs on your computer, so your audio never leaves it. macOS, Windows, Linux.">
+  <title>Vurb — Dictation that runs on your computer</title>
+  <meta name="description" content="Hold a key, talk, let go. Vurb types what you said wherever your cursor is. Your audio never leaves your computer. macOS, Windows, Linux.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f6f5f1">
   <meta property="og:title" content="Vurb — Dictation that runs on your computer">
-  <meta property="og:description" content="Hold a key, talk, let go. Your audio never leaves your computer. Free to start.">
+  <meta property="og:description" content="Hold a key, talk, let go. Vurb types what you said wherever your cursor is. Your audio never leaves your computer. macOS, Windows, Linux.">
   <meta property="og:image" content="https://vurb.me/assets/logo.png">
   <meta property="og:url" content="https://vurb.me/">
   <link rel="canonical" href="https://vurb.me/">
@@ -19,7 +18,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <script>
-    // Theme before paint: saved choice, else system dark, else light.
     (function () {
       var t = null;
       try { t = localStorage.getItem("theme"); } catch (e) {}
@@ -32,30 +30,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Vurb home" data-name-attr="aria-label">
-        <img src="assets/mic.svg" alt="" width="15" height="20">
-        <span data-name>Vurb</span>
-      </a>
-      <nav aria-label="Main">
-        <ul class="nav-links">
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <button class="text-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">Dark</button>
-        <a class="btn btn-small" href="#download" data-download-primary>Download</a>
-      </div>
-    </div>
-  </header>
-
+  <script src="layout.js"></script>
   <main id="main">
-    <!-- Hero -->
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -65,8 +41,8 @@
             Transcription runs on your own computer, so your audio never leaves it, and it works offline.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#download" data-download-primary><span data-download-label>Download for free</span></a>
-            <a class="quiet-link" href="#pricing">See pricing</a>
+            <a class="btn" href="download.html" data-download-primary><span data-download-label>Download for free</span></a>
+            <a class="quiet-link" href="pricing.html">See pricing</a>
           </div>
           <p class="small muted">The key is fn on a Mac and Right Control on Windows and Linux. You can change it.</p>
         </div>
@@ -90,15 +66,28 @@
       </div>
     </section>
 
-    <!-- How it works -->
+
+    <section class="section" aria-labelledby="speak-instead-of-type-title">
+      <div class="container">
+        <h2 id="speak-instead-of-type-title">Speak instead of type</h2>
+        
+        <div class="rates">
+          <div class="rate"><span class="rate-label">Speaking</span><span class="rate-bar"><span style="width:100%"></span></span><span class="rate-num">130–150 wpm</span></div>
+          <div class="rate"><span class="rate-label">Typing</span><span class="rate-bar"><span style="width:27%"></span></span><span class="rate-num">~40 wpm</span></div>
+        </div>
+        <p class="footnote">Typical averages for conversational speech and keyboard typing. Your numbers will vary; Vurb's stats show your own words per minute.</p>
+        <p class="more">Most people talk about three times faster than they type. Vurb is a way to use that in the apps you already have open.</p>
+      </div>
+    </section>
     <section class="section" id="how" aria-labelledby="how-title">
       <div class="container">
         <h2 id="how-title">How it works</h2>
+        
         <ol class="steps">
           <li>
             <span class="step-n">1</span>
             <h3>Hold the key</h3>
-            <p>Click into any text field first. Then hold your dictation key. A small pill appears at the bottom of the screen while it listens.</p>
+            <p>Click into any text field, then hold your dictation key. A small pill appears at the bottom of the screen while it listens.</p>
           </li>
           <li>
             <span class="step-n">2</span>
@@ -114,265 +103,64 @@
         <p class="aside">For longer stretches, double-tap the key. It keeps listening until you tap it again.</p>
       </div>
     </section>
-
-    <!-- Why we built it -->
-    <section class="section" aria-labelledby="why-title">
+    <section class="section" aria-labelledby="what-it-does-title">
       <div class="container">
-        <div class="note">
-          <h2 id="why-title">Why we built it</h2>
-          <div class="note-body">
-            <p>We talk faster than we type, and we wanted that to work in every app on the computer, not just inside one product. We also didn't want our voice sent to a server just to get a sentence into a chat window. OpenAI's Whisper model runs fast enough on a laptop now, so we put it behind a single key.</p>
-            <p>That's most of the app. It transcribes 12 seconds of speech in about 0.3 seconds on an M-series Mac with the best model. The free plan is meant to be usable every day, and the paid plans are priced so a whole team can afford them.</p>
-            <p class="sig">— The Vurb team</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="section" id="features" aria-labelledby="features-title">
-      <div class="container">
-        <h2 id="features-title">What's in it</h2>
+        <h2 id="what-it-does-title">What it does</h2>
+        
         <dl class="features">
-          <div><dt>Local transcription</dt><dd>OpenAI Whisper via whisper.cpp, on your machine. Your audio never leaves your computer, and dictation works offline.</dd></div>
+          <div><dt>Any app</dt><dd>If there's a text cursor, it works there: email, chat, documents, code editors, forms.</dd></div>
+          <div><dt>Local transcription</dt><dd>OpenAI Whisper via whisper.cpp, on your own computer. Works offline.</dd></div>
           <div><dt>Speed</dt><dd>About 0.3s for a 12-second clip on Apple Silicon with the best model.</dd></div>
-          <div><dt>Any app</dt><dd>If there's a text cursor, it works there.</dd></div>
-          <div><dt>90+ languages</dt><dd>Detected automatically. No language switch to flip.</dd></div>
-          <div><dt>Your key</dt><dd>Hold to talk, double-tap for hands-free, <kbd>Esc</kbd> to cancel. Pick whichever key you like.</dd></div>
-          <div><dt>Custom vocabulary</dt><dd>Add names, product terms and jargon so they come out spelled right.</dd></div>
-          <div><dt>History and stats</dt><dd>Everything you've dictated, plus words per minute, streaks, time saved and a few badges.</dd></div>
-          <div><dt>Small touches</dt><dd>Start and stop sounds, and a slim waveform pill while it records.</dd></div>
-          <div><dt>AI cleanup (optional)</dt><dd>Adds punctuation and drops filler words, using Claude. It never translates. Off by default; on any plan it works with your own Claude API key. Only text is sent, never audio.</dd></div>
-          <div><dt>Platforms</dt><dd>macOS, Windows and Linux. Downloads are on GitHub Releases.</dd></div>
+          <div><dt>90+ languages</dt><dd>Detected automatically, including switching between languages.</dd></div>
+          <div><dt>Custom vocabulary</dt><dd>Names, product terms and jargon, spelled the way you spell them.</dd></div>
+          <div><dt>History and stats</dt><dd>Search past dictations; see words per minute, streaks and time saved.</dd></div>
         </dl>
+        <p class="more"><a href="features.html">All features</a></p>
       </div>
     </section>
-
-    <!-- Pricing -->
-    <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <section class="section" aria-labelledby="private-by-default-title">
       <div class="container">
-        <div class="section-top">
-          <div>
-            <h2 id="pricing-title">Pricing</h2>
-            <p class="muted">Pro and Growth come with a <span data-refund-days>30</span>-day money-back guarantee.</p>
+        <h2 id="private-by-default-title">Private by default</h2>
+        
+        <div class="two-col">
+          <div></div>
+          <div class="prose">
+            <p>Your audio never leaves your computer. It's transcribed on the device and discarded. Your transcripts, history and stats stay in the app's folder on your machine.</p>
+            <p>AI cleanup is optional and off until you turn it on. When it's on, only the text goes to Anthropic, using your own API key. We don't run analytics on this site.</p>
+            <p><a href="security.html">How your data moves</a></p>
           </div>
-          <div class="billing" role="group" aria-label="Billing period">
-            <button type="button" data-billing="monthly" aria-pressed="false">Monthly</button>
-            <button type="button" data-billing="yearly" aria-pressed="true">Yearly <span class="muted" data-save-badge>(save up to 35%)</span></button>
-          </div>
-        </div>
-
-        <div class="plans">
-          <article class="plan" aria-labelledby="plan-free">
-            <h3 id="plan-free">Free</h3>
-            <p class="price"><span class="amount" data-price="free">$0</span></p>
-            <p class="price-note">Forever. No card, no account.</p>
-            <ul>
-              <li><span data-free-words>2,000</span> words a week</li>
-              <li>Local, private transcription</li>
-              <li>All 90+ languages</li>
-              <li>Hold-to-talk and hands-free</li>
-              <li>History and stats</li>
-              <li>AI cleanup with your own Claude API key</li>
-            </ul>
-            <a class="btn btn-outline" href="#download">Download</a>
-          </article>
-
-          <article class="plan" aria-labelledby="plan-pro">
-            <h3 id="plan-pro">Pro</h3>
-            <p class="price"><span class="amount" data-plan-amount="pro">$3.25</span><span class="per">/month</span></p>
-            <p class="price-note" data-plan-note="pro">Billed $39 per year</p>
-            <ul>
-              <li>Unlimited words</li>
-              <li>Everything in Free</li>
-              <li>Up to <span data-device-limit>3</span> computers</li>
-              <li>Priority support</li>
-              <li>Early access to new features</li>
-              <li class="later">Built-in AI cleanup, no API key needed <em>(coming soon)</em></li>
-            </ul>
-            <a class="btn btn-outline" href="#" data-checkout="proYearly" data-plan-checkout="pro">Get Pro</a>
-          </article>
-
-          <article class="plan" aria-labelledby="plan-growth">
-            <h3 id="plan-growth">Growth</h3>
-            <p class="price"><span class="amount" data-plan-amount="growth">$9</span><span class="per">/user/month</span></p>
-            <p class="price-note" data-plan-note="growth">Billed yearly · <span data-min-seats>3</span>-seat minimum</p>
-            <ul>
-              <li>Everything in Pro, for every seat</li>
-              <li>One invoice, centralized billing</li>
-              <li>Add or remove seats anytime</li>
-              <li>Help onboarding your team</li>
-              <li>Priority support</li>
-              <li class="later">Shared team vocabulary <em>(coming soon)</em></li>
-              <li class="later">Admin dashboard <em>(coming soon)</em></li>
-            </ul>
-            <a class="btn" href="#" data-checkout="growth">Start team trial</a>
-          </article>
-
-          <article class="plan" aria-labelledby="plan-ent">
-            <h3 id="plan-ent">Enterprise</h3>
-            <p class="price"><span class="amount">Custom</span></p>
-            <p class="price-note">Priced for your organization</p>
-            <ul>
-              <li>Everything in Growth</li>
-              <li>100% on-device transcription. Employee audio never leaves their computers.</li>
-              <li>Volume discounts</li>
-              <li>Invoicing, POs and annual contracts</li>
-              <li>Security review and DPA support</li>
-              <li>A dedicated success manager and an SLA</li>
-              <li class="later">SSO / SAML <em>(on the roadmap)</em></li>
-              <li class="later">MDM deployment <em>(on the roadmap)</em></li>
-            </ul>
-            <a class="btn btn-outline" href="mailto:sales@vurb.me" data-checkout="enterprise">Talk to sales</a>
-          </article>
         </div>
       </div>
     </section>
-
-    <!-- Comparison -->
-    <section class="section" id="compare" aria-labelledby="compare-title">
+    <section class="section" aria-labelledby="who-uses-it-for-what-title">
       <div class="container">
-        <h2 id="compare-title">How the prices compare</h2>
-        <p class="muted intro">What other dictation apps list on their pricing pages, next to ours.</p>
-        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="compare-title">
-          <table class="compare">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"><span data-name>Vurb</span></th>
-                <th scope="col">Weesper Neon Flow</th>
-                <th scope="col">Wispr Flow</th>
-                <th scope="col">Superwhisper</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Free tier</th>
-                <td><span data-free-words>2,000</span> words/week</td>
-                <td>1,500 words/week</td>
-                <td>2,000 words/week (desktop)</td>
-                <td>See their site</td>
-              </tr>
-              <tr>
-                <th scope="row">Pro, monthly</th>
-                <td><span data-price="proMonthly">$4.99</span>/mo</td>
-                <td>€5/mo</td>
-                <td>$15/mo</td>
-                <td>$8.49/mo</td>
-              </tr>
-              <tr>
-                <th scope="row">Pro, yearly</th>
-                <td><span data-price="proYearly">$39</span>/yr</td>
-                <td>€45/yr</td>
-                <td>$144/yr</td>
-                <td>$84.99/yr</td>
-              </tr>
-              <tr>
-                <th scope="row">Teams</th>
-                <td><span data-price="growthYearly">$9</span>/user/mo yearly, <span data-price="growthMonthly">$12</span> monthly</td>
-                <td>See their site</td>
-                <td>$18/user/mo yearly, $23 monthly (reported Oct 2026)</td>
-                <td>See their site</td>
-              </tr>
-              <tr>
-                <th scope="row">Enterprise</th>
-                <td>Custom</td>
-                <td>See their site</td>
-                <td>Custom</td>
-                <td>See their site</td>
-              </tr>
-              <tr>
-                <th scope="row">Refund window</th>
-                <td><span data-refund-days>30</span> days</td>
-                <td>7 days</td>
-                <td>See their site</td>
-                <td>See their site</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="sources">
-          Prices as listed on each company's public pricing page in October 2026, in the currency they list; check their sites for current pricing.
-          Wispr Flow's team pricing is as reported in October 2026 by a third-party tracker.
-          Weesper Neon Flow (€99) and Superwhisper ($249.99) also list lifetime licenses; we don't sell one.
-          Sources: <a href="https://weesperneonflow.ai/en/pricing" rel="noopener" target="_blank">weesperneonflow.ai/en/pricing</a>,
-          <a href="https://wisprflow.ai/pricing" rel="noopener" target="_blank">wisprflow.ai/pricing</a>,
-          <a href="https://www.usagepricing.com/blueprint/activity/wisprflow-2026-10-05-growth-enterprise-split" rel="noopener" target="_blank">usagepricing.com</a> (Wispr Flow teams),
-          <a href="https://superwhisper.com" rel="noopener" target="_blank">superwhisper.com</a>.
-          Weesper Neon Flow, Wispr Flow and Superwhisper are trademarks of their respective owners. <span data-name>Vurb</span> is not affiliated with or endorsed by them.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="container faq-grid">
-        <h2 id="faq-title">Questions</h2>
-        <div class="faq">
-          <details>
-            <summary>Does my audio leave my computer?</summary>
-            <p>No. Audio is transcribed on your computer and stays there. If you turn on AI cleanup, the transcribed text is sent for cleanup. Never the audio. Cleanup is off until you turn it on.</p>
-          </details>
-          <details>
-            <summary>Which operating systems does it run on?</summary>
-            <p>macOS, Windows and Linux. Downloads are on GitHub Releases. It's fastest on Apple Silicon Macs.</p>
-          </details>
-          <details>
-            <summary>Is the free plan actually free?</summary>
-            <p>Yes. <span data-free-words>2,000</span> words a week, all languages, hold-to-talk and hands-free, history and stats. No card and no account. You can use AI cleanup on Free with your own Claude API key. Pro removes the word limit.</p>
-          </details>
-          <details>
-            <summary>Does Pro include AI cleanup?</summary>
-            <p>Not yet. Built-in cleanup that doesn't need your own API key is coming. Today every plan can use cleanup with your own Claude API key.</p>
-          </details>
-          <details>
-            <summary>Do you have team plans?</summary>
-            <p>Growth gives every seat everything in Pro, on one invoice, with seats you can add or remove anytime (<span data-min-seats>3</span>-seat minimum). Enterprise adds volume discounts, invoicing and POs, annual contracts, security review and DPA support, and a dedicated success manager with an SLA. <a href="mailto:sales@vurb.me" data-checkout-link="enterprise">Email sales</a>.</p>
-          </details>
-          <details>
-            <summary>Will it pass our security review?</summary>
-            <p>Transcription is 100% on-device on every plan, so employee audio never leaves their computers. AI cleanup sends text only and is off by default. On Enterprise we'll go through your security review and help with a DPA.</p>
-          </details>
-          <details>
-            <summary>What's the refund policy?</summary>
-            <p>Pro and Growth have a <span data-refund-days>30</span>-day money-back guarantee. If it isn't for you, ask within <span data-refund-days>30</span> days of buying and we'll refund you in full.</p>
-          </details>
-          <details>
-            <summary>Will AI cleanup change what I said?</summary>
-            <p>It adds punctuation and removes filler like "um" and "uh". It doesn't rewrite your sentences into something else, and it never translates.</p>
-          </details>
+        <h2 id="who-uses-it-for-what-title">Who uses it for what</h2>
+        <p class="section-lede">Different jobs, same key.</p>
+        <div class="cards">
+          <a class="card" href="for/developers.html"><h3>Developers</h3><p>Commit messages, PR descriptions, review comments and prompts for coding assistants.</p></a>
+          <a class="card" href="for/writers.html"><h3>Writers & creators</h3><p>First drafts, outlines, scripts and captions, at the speed you think.</p></a>
+          <a class="card" href="for/sales.html"><h3>Sales</h3><p>Call notes and follow-ups written while the conversation is still fresh.</p></a>
+          <a class="card" href="for/support.html"><h3>Customer support</h3><p>Ticket replies and internal notes without the typing backlog.</p></a>
+          <a class="card" href="for/students.html"><h3>Students</h3><p>Lecture notes, essay drafts and emails, in more than one language.</p></a>
+          <a class="card" href="for/legal.html"><h3>Lawyers</h3><p>Memos and correspondence dictated on a machine that keeps the audio.</p></a>
+          <a class="card" href="for/accessibility.html"><h3>Accessibility</h3><p>Less typing for people with RSI, limited mobility or dyslexia.</p></a>
+          <a class="card" href="for/leaders.html"><h3>Founders & managers</h3><p>Updates, feedback and decisions written down instead of put off.</p></a>
         </div>
       </div>
     </section>
-
-    <!-- Download -->
-    <section class="section download" id="download" aria-labelledby="download-title">
-      <div class="container download-inner">
+    <section class="section">
+      <div class="container cta-band">
         <div>
-          <h2 id="download-title">Download</h2>
-          <p class="muted" data-os-hint>Free to start. Pick your platform.</p>
+          <h2>Download Vurb</h2>
+          <p class="muted">Free to start. macOS 13+, Windows 10/11, Linux (X11).</p>
         </div>
-        <ul class="platforms">
-          <li><a class="btn btn-outline" href="#" data-os="mac" data-download="mac">macOS</a></li>
-          <li><a class="btn btn-outline" href="#" data-os="windows" data-download="windows">Windows</a></li>
-          <li><a class="btn btn-outline" href="#" data-os="linux" data-download="linux">Linux</a></li>
-        </ul>
+        <div class="cta-actions">
+          <a class="btn" href="download.html">Download</a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 <span data-name>Vurb</span></p>
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="https://github.com/jungmarker/vurb/releases" data-link="github" rel="noopener">All downloads</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="config.js"></script>
   <script src="main.js"></script>

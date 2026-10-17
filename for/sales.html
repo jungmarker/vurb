@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vurb for sales</title>
+  <meta name="description" content="Use Vurb to dictate call notes, follow-up emails and CRM updates in any app.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Vurb for sales">
+  <meta property="og:description" content="Use Vurb to dictate call notes, follow-up emails and CRM updates in any app.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/for/sales.html">
+  <link rel="canonical" href="https://vurb.me/for/sales.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <script src="../layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="../use-cases.html">Use cases</a> / Sales</p>
+        <h1>Write it down before the next call</h1>
+        <p class="lede">Notes and follow-ups are where deals stall. Say them right after the call, in whichever CRM or inbox you use.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="workflows-title">
+      <div class="container">
+        <h2 id="workflows-title">Workflows</h2>
+        <p class="section-lede">Examples of what you'd say and what ends up in the text field.</p>
+        <div class="workflows">
+          <div class="workflow">
+            <div><h3>Call notes</h3><p>Put your cursor in the notes field and talk through what happened.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“They're evaluating two other vendors, decision by end of month, main concern is onboarding time for the support team”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">They're evaluating two other vendors. Decision by end of month. Main concern is onboarding time for the support team.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Follow-up emails</h3><p>Draft the recap while you still remember the details.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Thanks for the time today. As promised I've attached the pricing for fifty seats and our security overview”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Thanks for the time today. As promised, I've attached the pricing for 50 seats and our security overview.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Pipeline updates</h3><p>Quick status notes for your manager or the team channel.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Acme moved to legal review, expecting signature next week”</p></div>
+              <div class="example-row"><span class="example-label">Typed</span><p class="example-typed">Acme moved to legal review, expecting signature next week.</p></div>
+            </div>
+          </div>
+          <div class="workflow">
+            <div><h3>Personal outreach</h3><p>A message that sounds like you, not a template.</p></div>
+            <div class="example">
+              <div class="example-row"><span class="example-label">Said</span><p class="example-said">“Hey Dana, um, saw your team just opened the Denver office, congrats, would love to show you what we did for a similar rollout”</p></div>
+              <div class="example-row"><span class="example-label">Typed <span class="tag">with AI cleanup</span></span><p class="example-typed">Hey Dana, saw your team just opened the Denver office. Congrats! Would love to show you what we did for a similar rollout.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="useful-features-title">
+      <div class="container">
+        <h2 id="useful-features-title">Useful features</h2>
+        
+        <div class="cards cols-3">
+          <div class="card"><h3>Works in any app</h3><p>CRM, email, chat. No integration to set up.</p></div>
+          <div class="card"><h3>Custom vocabulary</h3><p>Account names, product names and competitor names spelled correctly.</p></div>
+          <div class="card"><h3>Growth plan</h3><p>One invoice for the whole team, seats added and removed as people join.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="../download.html">Download</a>
+          <a class="quiet-link" href="../pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download — Vurb</title>
+  <meta name="description" content="Download Vurb for macOS, Windows or Linux. System requirements, first-run steps and how to open the unsigned beta installers.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Download — Vurb">
+  <meta property="og:description" content="Download Vurb for macOS, Windows or Linux. System requirements, first-run steps and how to open the unsigned beta installers.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/download.html">
+  <link rel="canonical" href="https://vurb.me/download.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Download Vurb</h1>
+        <p class="lede" data-os-hint>Free to start. Pick your platform.</p>
+        <ul class="platforms dl-platforms">
+          <li><a class="btn btn-outline" href="#" data-os="mac" data-download="mac">macOS</a></li>
+          <li><a class="btn btn-outline" href="#" data-os="windows" data-download="windows">Windows</a></li>
+          <li><a class="btn btn-outline" href="#" data-os="linux" data-download="linux">Linux</a></li>
+        </ul>
+        <p class="small muted">Version 0.1.0 beta. All files are on <a href="https://github.com/jungmarker/vurb/releases" data-link="github">GitHub Releases</a>.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="system-requirements-title">
+      <div class="container">
+        <h2 id="system-requirements-title">System requirements</h2>
+        
+        <div class="table-wrap">
+        <table class="kv">
+          <tbody>
+            <tr><th scope="row">macOS</th><td>macOS 13 or later. Apple Silicon recommended for the Best model.</td></tr>
+            <tr><th scope="row">Windows</th><td>Windows 10 or 11, x64.</td></tr>
+            <tr><th scope="row">Linux</th><td>x64, X11 session. Wayland isn't supported yet.</td></tr>
+            <tr><th scope="row">Disk</th><td>148 MB to 574 MB for the speech model, depending on which one you choose, plus the app.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="first-run-title">
+      <div class="container">
+        <h2 id="first-run-title">First run</h2>
+        
+        <ol class="ol-steps">
+          <li><strong>Install and open Vurb.</strong> If you see a warning about an unidentified developer, see the next section.</li>
+          <li><strong>Allow the microphone.</strong> Your OS will ask the first time you dictate.</li>
+          <li><strong>On a Mac, allow Accessibility.</strong> Vurb needs it to type into other apps: System Settings → Privacy &amp; Security → Accessibility, then turn on Vurb. Without it, text is copied to the clipboard instead of typed.</li>
+          <li><strong>Let the speech model download.</strong> Apple Silicon Macs start with Best (574 MB); other computers start with Balanced (190 MB). You can switch models in settings.</li>
+          <li><strong>Hold your key and talk.</strong> fn on a Mac, Right Control on Windows and Linux.</li>
+        </ol>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="unsigned-installer-warnings-title">
+      <div class="container">
+        <h2 id="unsigned-installer-warnings-title">Unsigned installer warnings</h2>
+        
+        <div class="two-col">
+          <div><p class="muted">The beta installers aren't code-signed yet, so your OS will warn you the first time. Here's how to open it anyway.</p></div>
+          <div>
+            <h3 class="h3-plain">macOS</h3>
+            <ol class="ol-steps">
+              <li>Open Vurb once. macOS will say it can't verify the developer. Click Done.</li>
+              <li>Open System Settings → Privacy &amp; Security.</li>
+              <li>Scroll down to the message about Vurb and click <strong>Open Anyway</strong>, then confirm.</li>
+            </ol>
+            <h3 class="h3-plain">Windows</h3>
+            <ol class="ol-steps">
+              <li>Run the installer. If you see “Windows protected your PC”, click <strong>More info</strong>.</li>
+              <li>Click <strong>Run anyway</strong>.</li>
+            </ol>
+            <p class="callout">Only do this for files downloaded from vurb.me or our GitHub Releases page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="need-help-title">
+      <div class="container">
+        <h2 id="need-help-title">Need help?</h2>
+        
+        <p class="prose">See <a href="support.html">Support</a> for permission problems and other fixes, or the <a href="faq.html">FAQ</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

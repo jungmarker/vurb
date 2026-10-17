@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Vurb</title>
+  <meta name="description" content="Why we built Vurb, a dictation app that runs on your own computer.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="About — Vurb">
+  <meta property="og:description" content="Why we built Vurb, a dictation app that runs on your own computer.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/about.html">
+  <link rel="canonical" href="https://vurb.me/about.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>About Vurb</h1>
+        <p class="lede">Why we built a dictation app, and what we're trying to keep true about it.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="why-we-built-it-title">
+      <div class="container">
+        <h2 id="why-we-built-it-title">Why we built it</h2>
+        
+        <div class="two-col">
+          <div></div>
+          <div class="serif-prose prose">
+            <p>We talk faster than we type, and we wanted that to work in every app on the computer, not just inside one product. We also didn't want our voice sent to a server just to get a sentence into a chat window. OpenAI's Whisper model runs fast enough on a laptop now, so we put it behind a single key.</p>
+            <p>That's most of the app. It transcribes 12 seconds of speech in about 0.3 seconds on an M-series Mac with the best model. It runs on Mac, Windows and Linux, because the people we work with use all three.</p>
+            <p>A few things we intend to keep true: your audio stays on your computer. The free plan is usable every day. Paid plans are priced so a whole team can afford them. And when something isn't built yet, we say so.</p>
+            <p class="sig">— The Vurb team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="get-in-touch-title">
+      <div class="container">
+        <h2 id="get-in-touch-title">Get in touch</h2>
+        
+        <div class="prose">
+          <p>General questions and support: <a href="mailto:hello@vurb.me">hello@vurb.me</a>. Teams and Enterprise: <a href="mailto:sales@vurb.me" data-checkout-link="enterprise">sales@vurb.me</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy and security — Vurb</title>
+  <meta name="description" content="How Vurb handles your data: audio and transcripts stay on your computer, AI cleanup is optional and text-only, no analytics.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Privacy and security — Vurb">
+  <meta property="og:description" content="How Vurb handles your data: audio and transcripts stay on your computer, AI cleanup is optional and text-only, no analytics.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/security.html">
+  <link rel="canonical" href="https://vurb.me/security.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Privacy and security</h1>
+        <p class="lede">What stays on your computer, what doesn't, and who sees what. In plain language.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="where-your-data-goes-title">
+      <div class="container">
+        <h2 id="where-your-data-goes-title">Where your data goes</h2>
+        
+        <div class="table-wrap">
+        <table class="kv">
+          <thead><tr><th scope="col">What</th><th scope="col">Where it goes</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Your audio</th><td>Stays on your computer. It's transcribed locally and discarded. Never sent to us or anyone else. The mic is only on while you're dictating.</td></tr>
+            <tr><th scope="row">Transcripts and history</th><td>Stored only on your computer, in the app's data folder. You can clear them in the app.</td></tr>
+            <tr><th scope="row">Stats and weekly word count</th><td>Calculated on your computer from your local history. Not sent to us.</td></tr>
+            <tr><th scope="row">AI cleanup (optional)</th><td>Off by default. When on, the transcribed text and your custom vocabulary go directly from your computer to Anthropic's Claude API, under your own API key. Never audio. We don't receive it.</td></tr>
+            <tr><th scope="row">Your API key</th><td>Stored in the app's settings on your computer. On macOS and Linux, that file is readable only by your user account.</td></tr>
+            <tr><th scope="row">License activation</th><td>For Pro and Growth, the app sends your license key and a generic device label to Lemon Squeezy to validate it, and re-checks about once a week.</td></tr>
+            <tr><th scope="row">Purchases</th><td>Handled by Lemon Squeezy as merchant of record. They see your payment details; we get your name, email, plan and country.</td></tr>
+            <tr><th scope="row">Speech model downloads</th><td>Downloaded from Hugging Face, which sees your IP address like any download. No audio or text is sent.</td></tr>
+            <tr><th scope="row">App downloads</th><td>Served from GitHub Releases, which sees your IP address.</td></tr>
+            <tr><th scope="row">This website</th><td>Hosted on GitHub Pages, which logs IP addresses. Fonts load from Google Fonts, which sees your IP address. Your theme choice is saved in your browser. No analytics, ad trackers or cookies.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="what-we-don-t-claim-title">
+      <div class="container">
+        <h2 id="what-we-don-t-claim-title">What we don't claim</h2>
+        
+        <div class="prose">
+          <p>We don't hold SOC 2, ISO 27001 or HIPAA certifications, and we don't claim the app makes you compliant with any particular rule. What we can tell you is exactly how data moves, which is the table above.</p>
+          <p>For Enterprise customers we offer security review and DPA support. <a href="mailto:sales@vurb.me" data-checkout-link="enterprise">Talk to sales</a>.</p>
+          <p>The legal version is in our <a href="privacy.html">privacy policy</a>. Questions: <a href="mailto:hello@vurb.me">hello@vurb.me</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

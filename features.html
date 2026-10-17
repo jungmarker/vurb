@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — Vurb</title>
+  <meta name="description" content="Hold-to-talk dictation in any app, local Whisper models, 90+ languages, custom vocabulary, optional AI cleanup, history and stats. macOS, Windows, Linux.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Features — Vurb">
+  <meta property="og:description" content="Hold-to-talk dictation in any app, local Whisper models, 90+ languages, custom vocabulary, optional AI cleanup, history and stats. macOS, Windows, Linux.">
+  <meta property="og:image" content="https://vurb.me/assets/logo.png">
+  <meta property="og:url" content="https://vurb.me/features.html">
+  <link rel="canonical" href="https://vurb.me/features.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        
+        <h1>Everything Vurb does today</h1>
+        <p class="lede">One key, any app, on your own computer. Here's the full list, with the things we haven't shipped yet marked as such.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="dictation-title">
+      <div class="container">
+        <h2 id="dictation-title">Dictation</h2>
+        
+        <dl class="features">
+          <div><dt>Hold to talk</dt><dd>Hold your key, speak, let go. The text is typed at your cursor.</dd></div>
+          <div><dt>Hands-free</dt><dd>Double-tap the key to keep listening without holding it. Tap once more to stop.</dd></div>
+          <div><dt>Cancel</dt><dd>Press <kbd>Esc</kbd> while recording and nothing is typed.</dd></div>
+          <div><dt>Works in any app</dt><dd>It types into whatever has focus. If pasting isn't allowed yet, the text is copied so you can paste it yourself.</dd></div>
+          <div><dt>Choose your key</dt><dd>fn by default on a Mac, Right Control on Windows and Linux. You can pick Option/Alt, Command/Windows, Control or Right Shift instead.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="languages-and-accuracy-title">
+      <div class="container">
+        <h2 id="languages-and-accuracy-title">Languages and accuracy</h2>
+        
+        <dl class="features">
+          <div><dt>90+ languages</dt><dd>Whisper detects the language automatically. Mixing English and Spanish in the same day, or the same sentence, works.</dd></div>
+          <div><dt>Speech models</dt><dd>Pick the trade-off: Fastest (English only, 148 MB), Fast (148 MB), Balanced (190 MB) or Best (574 MB). Apple Silicon Macs default to Best; other machines default to Balanced.</dd></div>
+          <div><dt>Speed</dt><dd>About 0.3s to transcribe a 12-second clip on an M-series Mac with the Best model.</dd></div>
+          <div><dt>Custom vocabulary</dt><dd>Add names, product terms and jargon so they come out spelled right.</dd></div>
+          <div><dt>Offline</dt><dd>Transcription runs on your computer. Once a model is downloaded, no internet connection is needed to dictate.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="ai-cleanup-optional-title">
+      <div class="container">
+        <h2 id="ai-cleanup-optional-title">AI cleanup (optional)</h2>
+        
+        <dl class="features">
+          <div><dt>What it does</dt><dd>Fixes punctuation, removes filler words like “um” and “uh”, and keeps only the correction when you change your mind mid-sentence (“no wait, I mean Thursday”).</dd></div>
+          <div><dt>What it doesn't do</dt><dd>It never translates, and it doesn't rewrite what you said into something else.</dd></div>
+          <div><dt>How it runs</dt><dd>Uses Claude with your own Anthropic API key, on any plan. Off by default. Only the text is sent, never audio.</dd></div>
+          <div><dt>Built-in cleanup <span class="tag">coming soon</span></dt><dd>Cleanup on Pro without needing your own key.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="history-and-stats-title">
+      <div class="container">
+        <h2 id="history-and-stats-title">History and stats</h2>
+        
+        <dl class="features">
+          <div><dt>History</dt><dd>Every dictation is saved on your computer, with search.</dd></div>
+          <div><dt>Stats</dt><dd>Words per minute, streaks, estimated time saved, and a few badges.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="comfort-title">
+      <div class="container">
+        <h2 id="comfort-title">Comfort</h2>
+        
+        <dl class="features">
+          <div><dt>Sounds</dt><dd>Start and stop sounds, with a volume control. Turn them off if you prefer.</dd></div>
+          <div><dt>The pill</dt><dd>A slim black pill with a small rainbow waveform shows while it's recording.</dd></div>
+          <div><dt>Launch at login</dt><dd>Optional, so it's ready when your computer is.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="platforms-title">
+      <div class="container">
+        <h2 id="platforms-title">Platforms</h2>
+        
+        <dl class="features">
+          <div><dt>macOS</dt><dd>macOS 13 or later. Fastest on Apple Silicon.</dd></div>
+          <div><dt>Windows</dt><dd>Windows 10 or 11, x64.</dd></div>
+          <div><dt>Linux</dt><dd>x64, X11 sessions. Wayland isn't supported yet.</dd></div>
+        </dl>
+        <p class="more"><a href="download.html">Download and system requirements</a></p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="not-shipped-yet-title">
+      <div class="container">
+        <h2 id="not-shipped-yet-title">Not shipped yet</h2>
+        <p class="section-lede">We'd rather tell you now than have you find out after downloading.</p>
+        <dl class="features">
+          <div><dt>Built-in AI cleanup <span class="tag">coming soon</span></dt><dd>On Pro, without your own API key.</dd></div>
+          <div><dt>Shared team vocabulary <span class="tag">coming soon</span></dt><dd>One vocabulary list for a whole Growth team.</dd></div>
+          <div><dt>Admin dashboard <span class="tag">coming soon</span></dt><dd>Seat and usage management for teams.</dd></div>
+          <div><dt>SSO / SAML <span class="tag">on the roadmap</span></dt><dd>For Enterprise.</dd></div>
+          <div><dt>MDM deployment <span class="tag">on the roadmap</span></dt><dd>For rolling out to managed machines.</dd></div>
+          <div><dt>Mobile apps <span class="tag">on the roadmap</span></dt><dd>Vurb is desktop-only today.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Try it on your own computer</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="download.html">Download</a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
