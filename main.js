@@ -123,7 +123,7 @@
     if (p.indexOf("linux") > -1 || ua.indexOf("linux") > -1 || ua.indexOf("x11") > -1) return "linux";
     return null;
   }
-  var labels = { mac: "macOS", windows: "Windows", linux: "Linux" };
+  var labels = { mac: "Mac", windows: "Windows", linux: "Linux" };
   var os = detectOS();
   var hint = $("[data-os-hint]");
   if (os) {

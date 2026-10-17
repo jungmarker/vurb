@@ -11,7 +11,7 @@
   var url = function (path) { return base + path; };
 
   // One-file logo swap: change these paths (or replace the files).
-  var LOGO = "assets/mic.svg";
+  var LOGO = "assets/logo.svg";
 
   var USE_CASES = [
     ["for/developers.html", "Developers"],
@@ -67,7 +67,7 @@
     '<a class="skip-link" href="#main">Skip to content</a>' +
     '<header class="site-header"><div class="container header-inner">' +
       '<a class="brand" href="' + url("index.html") + '" aria-label="Vurb home">' +
-        '<img src="' + url(LOGO) + '" alt="" width="15" height="20"><span data-name>Vurb</span></a>' +
+        '<img src="' + url(LOGO) + '" alt="" width="24" height="24"><span data-name>Vurb</span></a>' +
       '<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>' +
       '<nav class="site-nav" id="site-nav" aria-label="Main"><ul class="nav-list">' + navItems + "</ul>" +
         '<div class="header-actions">' +
@@ -80,7 +80,7 @@
   var footer =
     '<footer class="site-footer"><div class="container">' +
       '<div class="footer-cols">' +
-        '<div class="footer-brand"><a class="brand" href="' + url("index.html") + '"><img src="' + url(LOGO) + '" alt="" width="15" height="20"><span data-name>Vurb</span></a>' +
+        '<div class="footer-brand"><a class="brand" href="' + url("index.html") + '"><img src="' + url(LOGO) + '" alt="" width="24" height="24"><span data-name>Vurb</span></a>' +
         '<p class="muted small">Dictation that runs on your computer.</p></div>' +
         FOOTER.map(function (col) {
           return '<div><h2 class="footer-h">' + esc(col[0]) + "</h2><ul>" +
