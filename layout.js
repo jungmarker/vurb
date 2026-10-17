@@ -33,6 +33,7 @@
   var FOOTER = [
     ["Product", [["features.html", "Features"], ["pricing.html", "Pricing"], ["download.html", "Download"], ["changelog.html", "What's new"], ["compare.html", "Compare"]]],
     ["Use cases", USE_CASES],
+    ["Guides", [["dictation-for-mac.html", "Dictation for Mac"], ["dictation-for-windows.html", "Voice to text for Windows"], ["dictation-for-linux.html", "Speech to text for Linux"], ["offline-dictation.html", "Offline dictation"], ["voice-typing.html", "Voice typing"], ["free-dictation-software.html", "Free dictation software"]]],
     ["Resources", [["faq.html", "FAQ"], ["support.html", "Support"], ["security.html", "Security"]]],
     ["Company", [["about.html", "About"], ["business.html", "Business"], ["mailto:sales@vurb.me", "Talk to sales"]]],
     ["Legal", [["terms.html", "Terms"], ["privacy.html", "Privacy"]]],
@@ -80,7 +81,7 @@
   var footer =
     '<footer class="site-footer"><div class="container">' +
       '<div class="footer-cols">' +
-        '<div class="footer-brand"><a class="brand" href="' + url("index.html") + '"><img src="' + url(LOGO) + '" alt="" width="24" height="24"><span data-name>Vurb</span></a>' +
+        '<div class="footer-brand"><a class="brand" href="' + url("index.html") + '"><img src="' + url(LOGO) + '" alt="" width="24" height="24" loading="lazy" decoding="async"><span data-name>Vurb</span></a>' +
         '<p class="muted small">Dictation that runs on your computer.</p></div>' +
         FOOTER.map(function (col) {
           return '<div><h2 class="footer-h">' + esc(col[0]) + "</h2><ul>" +

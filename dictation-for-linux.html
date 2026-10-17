@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speech to text for Linux: offline dictation | Vurb</title>
+  <meta name="description" content="Vurb brings hold-to-talk speech to text to Linux: local Whisper models, 90+ languages, typing into any app on X11. Private, offline and free to start.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vurb">
+  <meta property="og:title" content="Speech to text for Linux: offline dictation | Vurb">
+  <meta property="og:description" content="Vurb brings hold-to-talk speech to text to Linux: local Whisper models, 90+ languages, typing into any app on X11. Private, offline and free to start.">
+  <meta property="og:image" content="https://vurb.me/assets/og.png">
+  <meta property="og:url" content="https://vurb.me/dictation-for-linux.html">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speech to text for Linux: offline dictation | Vurb">
+  <meta name="twitter:description" content="Vurb brings hold-to-talk speech to text to Linux: local Whisper models, 90+ languages, typing into any app on X11. Private, offline and free to start.">
+  <meta name="twitter:image" content="https://vurb.me/assets/og.png">
+  <link rel="canonical" href="https://vurb.me/dictation-for-linux.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Vurb work on Wayland?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. Vurb listens for your dictation key through X11, so you need an X11 session. Most distributions let you pick one at the login screen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which Linux systems are supported?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "x64 Linux desktops running an X11 session. Downloads come as an AppImage (runs on most distributions) or a .deb package (Debian, Ubuntu and derivatives)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which key starts dictation on Linux?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Right Control by default. You can switch to Left Control, Left or Right Alt, the right Super key, or Right Shift."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it need an internet connection?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only to download the app and the speech model. Transcription itself runs offline on your machine."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://vurb.me/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Speech to text for Linux",
+     "item": "https://vurb.me/dictation-for-linux.html"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Speech to text for Linux that types into any app</h1>
+        <p class="lede">Hold Right Control, talk, let go. Vurb transcribes your speech locally with Whisper and types it wherever your cursor is. It runs on x64 Linux desktops using X11.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-how">
+      <div class="container">
+        <h2 id="lin-how">Dictation on the Linux desktop</h2>
+        <div class="prose">
+          <p>Good speech to text on Linux usually means wiring up a model, a hotkey daemon and a typing tool yourself. Vurb packages that into one app: a dictation key, a small on-screen pill while you talk, local transcription, and text typed into the focused window — terminal, editor, browser or chat client.</p>
+          <p>The default key is <kbd>Right Control</kbd>. Change it to Left Control, Alt, the right Super key or Right Shift in settings. Double-tap for hands-free dictation, tap once more to stop, and press <kbd>Esc</kbd> to discard a recording.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-x11">
+      <div class="container">
+        <h2 id="lin-x11">X11 today, Wayland later</h2>
+        <div class="prose">
+          <p>Vurb currently needs an X11 session to listen for the dictation key and type into other windows. Wayland isn't supported yet. If your distribution defaults to Wayland, choose the X11 (or “Xorg”) session at the login screen.</p>
+          <p>We'd rather say this up front than have you find out after installing.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-models">
+      <div class="container">
+        <h2 id="lin-models">Local Whisper models</h2>
+        <div class="prose">
+          <p>Vurb runs OpenAI's open-source Whisper model with whisper.cpp on your own machine. Pick from Fastest (English only, 148 MB), Fast (148 MB), Balanced (190 MB, the default on Linux) or Best (574 MB). The multilingual models handle 90+ languages and detect them automatically.</p>
+          <p>Once a model has downloaded, speech to text works completely offline. Your audio is transcribed and discarded, and your history stays in Vurb's local data folder. Optional AI cleanup sends text only, to Anthropic, with your own API key.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-uses">
+      <div class="container">
+        <h2 id="lin-uses">What people dictate on Linux</h2>
+        <div class="prose">
+          <p>Because Vurb types into whatever window has focus, it fits the way Linux users already work. A few common uses:</p>
+          <ul>
+            <li>Commit messages and pull request descriptions, typed straight into the terminal or your Git client.</li>
+            <li>Long prompts for coding assistants, which are tedious to type and better when they're specific.</li>
+            <li>Replies in chat and email clients, documentation, and notes in your editor of choice.</li>
+          </ul>
+          <p>Add project names, libraries and acronyms to custom vocabulary so they come out spelled correctly. Optional AI cleanup, using your own Claude API key, removes filler words and fixes punctuation if you want tidier text. More examples are on the <a href="for/developers.html">developers page</a>.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-start">
+      <div class="container">
+        <h2 id="lin-start">Getting started</h2>
+        <ol class="ol-steps">
+          <li><strong>Download the Linux build</strong> for x64 from the <a href="download.html">download page</a> (an AppImage for most distributions, or a .deb for Debian and Ubuntu).</li>
+          <li><strong>Log in to an X11 session</strong> if you're not already using one.</li>
+          <li><strong>Open Vurb</strong> and let the speech model download.</li>
+          <li><strong>Hold Right Control and talk.</strong></li>
+        </ol>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-faq">
+      <div class="container">
+        <h2 id="lin-faq">Questions about speech to text on Linux</h2>
+        <div class="faq">
+          <details>
+            <summary>Does Vurb work on Wayland?</summary>
+            <p>Not yet. Vurb listens for your dictation key through X11, so you need an X11 session. Most distributions let you pick one at the login screen.</p>
+          </details>
+          <details>
+            <summary>Which Linux systems are supported?</summary>
+            <p>x64 Linux desktops running an X11 session. Downloads come as an AppImage (runs on most distributions) or a .deb package (Debian, Ubuntu and derivatives).</p>
+          </details>
+          <details>
+            <summary>Which key starts dictation on Linux?</summary>
+            <p>Right Control by default. You can switch to Left Control, Left or Right Alt, the right Super key, or Right Shift.</p>
+          </details>
+          <details>
+            <summary>Does it need an internet connection?</summary>
+            <p>Only to download the app and the speech model. Transcription itself runs offline on your machine.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="lin-related">
+      <div class="container">
+        <h2 id="lin-related">Related</h2>
+        <ul class="related-links"><li><a href="features.html">All features</a></li><li><a href="support.html">Troubleshooting</a></li><li><a href="for/developers.html">Voice to text for developers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li></ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Download Vurb for Linux</h2>
+          <p class="muted">Free to start. x64, X11 session.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="download.html"><span data-download-label>Download Vurb</span></a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <noscript class="static-nav"><nav aria-label="Site pages"><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="use-cases.html">Use cases</a></li><li><a href="business.html">Business</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="security.html">Privacy and security</a></li><li><a href="compare.html">Compare</a></li><li><a href="download.html">Download</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">What&#x27;s new</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="for/developers.html">Developers</a></li><li><a href="for/writers.html">Writers &amp; creators</a></li><li><a href="for/sales.html">Sales</a></li><li><a href="for/support.html">Customer support</a></li><li><a href="for/students.html">Students</a></li><li><a href="for/legal.html">Lawyers</a></li><li><a href="for/accessibility.html">Accessibility</a></li><li><a href="for/leaders.html">Founders &amp; managers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li><li><a href="voice-typing.html">Voice typing in any app</a></li><li><a href="free-dictation-software.html">Free dictation software</a></li></ul></nav></noscript>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

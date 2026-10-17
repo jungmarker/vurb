@@ -228,7 +228,7 @@ kbd {
 
 /* Footer (markup injected by layout.js) */
 .site-footer { border-top: 1px solid var(--rule); padding: 48px 0 40px; font-size: 14px; color: var(--muted); }
-.footer-cols { display: grid; grid-template-columns: 1.4fr repeat(5, 1fr); gap: 32px; }
+.footer-cols { display: grid; grid-template-columns: 1.3fr repeat(6, 1fr); gap: 28px; }
 .footer-brand p { margin-top: 10px; max-width: 14em; }
 .footer-h { font-family: var(--sans); font-size: 13px; font-weight: 650; color: var(--text); margin: 0 0 10px; letter-spacing: 0; }
 .footer-cols li { margin: 6px 0; }
@@ -430,3 +430,9 @@ p { text-wrap: pretty; }
   .hero-mark { width: 88px; height: 88px; margin: 0 0 14px -9px; }
 }
 .prose .bird-list { list-style: none; padding-left: 0; }
+
+/* ---------- SEO pass additions ---------- */
+.h1-kicker { display: block; font-family: var(--sans); font-size: 15px; font-weight: 600; letter-spacing: 0; line-height: 1.4; color: var(--muted); margin-bottom: 14px; }
+.related-links { display: flex; flex-wrap: wrap; gap: 10px 28px; }
+.related-links a { font-size: 15px; }
+.static-nav ul { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 24px var(--gutter); max-width: var(--maxw); margin: 0 auto; font-size: 14px; }

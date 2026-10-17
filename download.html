@@ -3,16 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Download — Vurb</title>
-  <meta name="description" content="Download Vurb for macOS, Windows or Linux. System requirements, first-run steps and how to open the unsigned beta installers.">
+  <title>Download Vurb dictation for Mac, Windows, Linux | Vurb</title>
+  <meta name="description" content="Download Vurb for macOS 13+, Windows 10/11 or Linux (X11). System requirements, first-run steps, speech model sizes and how to open the beta installers.">
   <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Download — Vurb">
-  <meta property="og:description" content="Download Vurb for macOS, Windows or Linux. System requirements, first-run steps and how to open the unsigned beta installers.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vurb">
+  <meta property="og:title" content="Download Vurb dictation for Mac, Windows, Linux | Vurb">
+  <meta property="og:description" content="Download Vurb for macOS 13+, Windows 10/11 or Linux (X11). System requirements, first-run steps, speech model sizes and how to open the beta installers.">
   <meta property="og:image" content="https://vurb.me/assets/og.png">
   <meta property="og:url" content="https://vurb.me/download.html">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Download Vurb dictation for Mac, Windows, Linux | Vurb">
+  <meta name="twitter:description" content="Download Vurb for macOS 13+, Windows 10/11 or Linux (X11). System requirements, first-run steps, speech model sizes and how to open the beta installers.">
   <meta name="twitter:image" content="https://vurb.me/assets/og.png">
   <link rel="canonical" href="https://vurb.me/download.html">
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
@@ -32,20 +36,68 @@
     })();
   </script>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://vurb.me/#app",
+   "name": "Vurb",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "macOS 13 or later, Windows 10/11 (x64), Linux (x64, X11)",
+   "softwareVersion": "0.1.1",
+   "downloadUrl": "https://github.com/jungmarker/vurb/releases/latest",
+   "url": "https://vurb.me/",
+   "description": "Hold-to-talk dictation for any app. Speech to text runs on your computer with OpenAI Whisper, so audio never leaves it.",
+   "publisher": {
+    "@id": "https://vurb.me/#org"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free",
+     "price": 0,
+     "priceCurrency": "USD",
+     "url": "https://vurb.me/pricing.html",
+     "description": "2,000 words per week"
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://vurb.me/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Download",
+     "item": "https://vurb.me/download.html"
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body>
   <script src="layout.js"></script>
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <h1>Download Vurb</h1>
+        <h1>Download the Vurb dictation app</h1>
         <p class="lede" data-os-hint>Free to start. Pick your platform.</p>
         <ul class="platforms dl-platforms">
           <li><a class="btn btn-outline" href="#" data-os="mac" data-download="mac">macOS</a></li>
           <li><a class="btn btn-outline" href="#" data-os="windows" data-download="windows">Windows</a></li>
           <li><a class="btn btn-outline" href="#" data-os="linux" data-download="linux">Linux</a></li>
         </ul>
-        <p class="small muted">Version 0.1.0 beta. All files are on <a href="https://github.com/jungmarker/vurb/releases" data-link="github">GitHub Releases</a>.</p>
+        <p class="small muted">Version 0.1.1 beta. All files are on <a href="https://github.com/jungmarker/vurb/releases" data-link="github">GitHub Releases</a>.</p>
       </div>
     </section>
     <section class="section" aria-labelledby="system-requirements-title">
@@ -55,7 +107,7 @@
         <div class="table-wrap">
         <table class="kv">
           <tbody>
-            <tr><th scope="row">macOS</th><td>macOS 13 or later. Apple Silicon recommended for the Best model.</td></tr>
+            <tr><th scope="row">macOS</th><td>macOS 13 or later, Apple Silicon or Intel (separate downloads). Apple Silicon recommended for the Best model.</td></tr>
             <tr><th scope="row">Windows</th><td>Windows 10 or 11, x64.</td></tr>
             <tr><th scope="row">Linux</th><td>x64, X11 session. Wayland isn't supported yet.</td></tr>
             <tr><th scope="row">Disk</th><td>148 MB to 574 MB for the speech model, depending on which one you choose, plus the app.</td></tr>
@@ -107,7 +159,14 @@
         <p class="prose">See <a href="support.html">Support</a> for permission problems and other fixes, or the <a href="faq.html">FAQ</a>.</p>
       </div>
     </section>
+    <section class="section" aria-labelledby="related-title">
+      <div class="container">
+        <h2 id="related-title">Related</h2>
+        <ul class="related-links"><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li></ul>
+      </div>
+    </section>
   </main>
+  <noscript class="static-nav"><nav aria-label="Site pages"><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="use-cases.html">Use cases</a></li><li><a href="business.html">Business</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="security.html">Privacy and security</a></li><li><a href="compare.html">Compare</a></li><li><a href="download.html">Download</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">What&#x27;s new</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="for/developers.html">Developers</a></li><li><a href="for/writers.html">Writers &amp; creators</a></li><li><a href="for/sales.html">Sales</a></li><li><a href="for/support.html">Customer support</a></li><li><a href="for/students.html">Students</a></li><li><a href="for/legal.html">Lawyers</a></li><li><a href="for/accessibility.html">Accessibility</a></li><li><a href="for/leaders.html">Founders &amp; managers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li><li><a href="voice-typing.html">Voice typing in any app</a></li><li><a href="free-dictation-software.html">Free dictation software</a></li></ul></nav></noscript>
 
   <script src="config.js"></script>
   <script src="main.js"></script>

@@ -3,16 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vurb — Dictation that runs on your computer</title>
-  <meta name="description" content="Hold a key, talk, let go. Vurb types what you said wherever your cursor is. Your audio never leaves your computer. macOS, Windows, Linux.">
+  <title>Vurb — Private dictation app for Mac, Windows and Linux</title>
+  <meta name="description" content="Vurb is a dictation app for Mac, Windows and Linux: hold a key, talk, and your words are typed in any app. Private Whisper speech to text that works offline.">
   <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Vurb — Dictation that runs on your computer">
-  <meta property="og:description" content="Hold a key, talk, let go. Vurb types what you said wherever your cursor is. Your audio never leaves your computer. macOS, Windows, Linux.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vurb">
+  <meta property="og:title" content="Vurb — Private dictation app for Mac, Windows and Linux">
+  <meta property="og:description" content="Vurb is a dictation app for Mac, Windows and Linux: hold a key, talk, and your words are typed in any app. Private Whisper speech to text that works offline.">
   <meta property="og:image" content="https://vurb.me/assets/og.png">
   <meta property="og:url" content="https://vurb.me/">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vurb — Private dictation app for Mac, Windows and Linux">
+  <meta name="twitter:description" content="Vurb is a dictation app for Mac, Windows and Linux: hold a key, talk, and your words are typed in any app. Private Whisper speech to text that works offline.">
   <meta name="twitter:image" content="https://vurb.me/assets/og.png">
   <link rel="canonical" href="https://vurb.me/">
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
@@ -32,6 +36,80 @@
     })();
   </script>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://vurb.me/#org",
+   "name": "Vurb",
+   "url": "https://vurb.me/",
+   "logo": "https://vurb.me/assets/logo.png",
+   "email": "hello@vurb.me"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://vurb.me/#website",
+   "name": "Vurb",
+   "url": "https://vurb.me/",
+   "publisher": {
+    "@id": "https://vurb.me/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://vurb.me/#app",
+   "name": "Vurb",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "macOS, Windows, Linux",
+   "softwareVersion": "0.1.1",
+   "downloadUrl": "https://vurb.me/download.html",
+   "url": "https://vurb.me/",
+   "description": "Hold-to-talk dictation for any app. Speech to text runs on your computer with OpenAI Whisper, so audio never leaves it.",
+   "publisher": {
+    "@id": "https://vurb.me/#org"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free",
+     "price": 0,
+     "priceCurrency": "USD",
+     "url": "https://vurb.me/pricing.html",
+     "description": "2,000 words per week"
+    },
+    {
+     "@type": "Offer",
+     "name": "Pro (monthly)",
+     "price": 4.99,
+     "priceCurrency": "USD",
+     "url": "https://vurb.me/pricing.html",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": 4.99,
+      "priceCurrency": "USD",
+      "unitCode": "MON"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Pro (yearly)",
+     "price": 39,
+     "priceCurrency": "USD",
+     "url": "https://vurb.me/pricing.html",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": 39,
+      "priceCurrency": "USD",
+      "unitCode": "ANN"
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body>
   <script src="layout.js"></script>
@@ -39,11 +117,11 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <img class="hero-mark" src="assets/logo.svg" alt="" width="112" height="112">
-          <h1>Hold a key. Talk. Let&nbsp;go.</h1>
+          <img class="hero-mark" src="assets/logo.svg" alt="Vurb logo: a cream speech-bubble bird with an orange beak on a dark tile" width="112" height="112" loading="eager" fetchpriority="high">
+          <h1><span class="h1-kicker">Dictation app for Mac, Windows and Linux</span> Hold a key. Talk. Let&nbsp;go.</h1>
           <p class="lede">
-            <span data-name>Vurb</span> types what you said wherever your cursor is — an email, a chat window, a code editor, a form.
-            Transcription runs on your own computer, so your audio never leaves it, and it works offline.
+            <span data-name>Vurb</span> is a voice to text app that types what you said wherever your cursor is — an email, a chat window, a code editor, a form.
+            Speech to text runs on your own computer with Whisper, so your audio never leaves it and dictation works offline.
           </p>
           <div class="hero-actions">
             <a class="btn" href="download.html" data-download-primary><span data-download-label>Download for free</span></a>
@@ -110,7 +188,7 @@
     </section>
     <section class="section" aria-labelledby="what-it-does-title">
       <div class="container">
-        <h2 id="what-it-does-title">What it does</h2>
+        <h2 id="what-it-does-title">What the dictation app does</h2>
         
         <dl class="features">
           <div><dt>Any app</dt><dd>If there's a text cursor, it works there: email, chat, documents, code editors, forms.</dd></div>
@@ -125,7 +203,7 @@
     </section>
     <section class="section" aria-labelledby="private-by-default-title">
       <div class="container">
-        <h2 id="private-by-default-title">Private by default</h2>
+        <h2 id="private-by-default-title">Private, offline speech to text</h2>
         
         <div class="two-col">
           <div></div>
@@ -139,7 +217,7 @@
     </section>
     <section class="section" aria-labelledby="who-uses-it-for-what-title">
       <div class="container">
-        <h2 id="who-uses-it-for-what-title">How people use it</h2>
+        <h2 id="who-uses-it-for-what-title">Voice to text for your kind of work</h2>
         <p class="section-lede">Eight kinds of work, with examples of what you say and what gets typed.</p>
         <div class="cards">
           <a class="card" href="for/developers.html"><h3>Developers</h3><p>Commit messages, PR descriptions, review comments and prompts for coding assistants.</p></a>
@@ -150,6 +228,20 @@
           <a class="card" href="for/legal.html"><h3>Lawyers</h3><p>Memos and correspondence dictated on a machine that keeps the audio.</p></a>
           <a class="card" href="for/accessibility.html"><h3>Accessibility</h3><p>Less typing for people with RSI, limited mobility or dyslexia.</p></a>
           <a class="card" href="for/leaders.html"><h3>Founders & managers</h3><p>Updates, feedback and decisions written down instead of put off.</p></a>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="platforms-title">
+      <div class="container">
+        <h2 id="platforms-title">Dictation for your computer</h2>
+        <p class="section-lede">The same hold-to-talk dictation on every desktop, plus guides to getting the most out of it.</p>
+        <div class="cards cols-3">
+          <a class="card" href="dictation-for-mac.html"><h3>Dictation for Mac</h3><p>fn to talk, fast on Apple Silicon, macOS 13 and later.</p></a>
+          <a class="card" href="dictation-for-windows.html"><h3>Voice to text for Windows</h3><p>Right Control to talk, on Windows 10 and 11.</p></a>
+          <a class="card" href="dictation-for-linux.html"><h3>Speech to text for Linux</h3><p>Local Whisper models on x64 desktops using X11.</p></a>
+          <a class="card" href="offline-dictation.html"><h3>Offline dictation</h3><p>What works without the internet, and why your audio stays put.</p></a>
+          <a class="card" href="voice-typing.html"><h3>Voice typing tips</h3><p>How to dictate cleanly: punctuation, corrections, vocabulary.</p></a>
+          <a class="card" href="free-dictation-software.html"><h3>Free dictation software</h3><p>What the free plan includes, and when Pro is worth it.</p></a>
         </div>
       </div>
     </section>
@@ -166,6 +258,7 @@
       </div>
     </section>
   </main>
+  <noscript class="static-nav"><nav aria-label="Site pages"><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="use-cases.html">Use cases</a></li><li><a href="business.html">Business</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="security.html">Privacy and security</a></li><li><a href="compare.html">Compare</a></li><li><a href="download.html">Download</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">What&#x27;s new</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="for/developers.html">Developers</a></li><li><a href="for/writers.html">Writers &amp; creators</a></li><li><a href="for/sales.html">Sales</a></li><li><a href="for/support.html">Customer support</a></li><li><a href="for/students.html">Students</a></li><li><a href="for/legal.html">Lawyers</a></li><li><a href="for/accessibility.html">Accessibility</a></li><li><a href="for/leaders.html">Founders &amp; managers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li><li><a href="voice-typing.html">Voice typing in any app</a></li><li><a href="free-dictation-software.html">Free dictation software</a></li></ul></nav></noscript>
 
   <script src="config.js"></script>
   <script src="main.js"></script>

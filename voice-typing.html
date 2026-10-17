@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice typing in any app: hold to talk | Vurb</title>
+  <meta name="description" content="Voice typing with Vurb: hold a key, talk, and your words are typed in any app on Mac, Windows or Linux. Tips for punctuation, corrections and custom vocabulary.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vurb">
+  <meta property="og:title" content="Voice typing in any app: hold to talk | Vurb">
+  <meta property="og:description" content="Voice typing with Vurb: hold a key, talk, and your words are typed in any app on Mac, Windows or Linux. Tips for punctuation, corrections and custom vocabulary.">
+  <meta property="og:image" content="https://vurb.me/assets/og.png">
+  <meta property="og:url" content="https://vurb.me/voice-typing.html">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Voice typing in any app: hold to talk | Vurb">
+  <meta name="twitter:description" content="Voice typing with Vurb: hold a key, talk, and your words are typed in any app on Mac, Windows or Linux. Tips for punctuation, corrections and custom vocabulary.">
+  <meta name="twitter:image" content="https://vurb.me/assets/og.png">
+  <link rel="canonical" href="https://vurb.me/voice-typing.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does voice typing add punctuation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Whisper usually adds punctuation and capitalization from context. For tidier results, optional AI cleanup fixes punctuation and removes filler words using your own Claude API key."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I correct myself mid-sentence?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "With AI cleanup on, saying something like “no wait, I mean Thursday” keeps only the correction. Without it, Vurb types what you said, and you can press Esc before letting go to start over."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work in every app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It types into whatever has focus, so it works in almost any app with a text cursor. If an app doesn't accept typed text, the dictation is still saved in your history to copy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is this different from my computer's built-in dictation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Built-in dictation varies by operating system and version. Vurb works the same way on Mac, Windows and Linux: one key, local Whisper models you choose, custom vocabulary, and searchable history."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://vurb.me/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Voice typing in any app",
+     "item": "https://vurb.me/voice-typing.html"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Voice typing in any app</h1>
+        <p class="lede">Hold a key, talk, let go. Vurb types what you said into whatever app you're using — no special editor, no copying and pasting from a separate window.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vt-how">
+      <div class="container">
+        <h2 id="vt-how">Hold to talk, anywhere you can type</h2>
+        <div class="prose">
+          <p>Voice typing works best when it's always one keypress away. With Vurb you click into a text field, hold your dictation key, and speak. A small pill shows it's listening. Let go and the text is typed at your cursor, in email, chat, documents, spreadsheets, browsers, terminals or code editors.</p>
+          <p>For longer passages, double-tap the key to dictate hands-free, then tap once to stop. If you start talking into the wrong window, press <kbd>Esc</kbd> before letting go and nothing is typed.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vt-diff">
+      <div class="container">
+        <h2 id="vt-diff">How it differs from built-in dictation</h2>
+        <div class="prose">
+          <p>macOS and Windows include dictation of their own, and if it does what you need, use it. What Vurb offers is consistency and control: the same hold-to-talk key on Mac, Windows and Linux; local Whisper speech models you choose between; custom vocabulary for names and jargon; and a searchable history of everything you've dictated, with stats such as words per minute and time saved. See a fuller <a href="compare.html">comparison</a>.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vt-tips">
+      <div class="container">
+        <h2 id="vt-tips">Tips for dictating well</h2>
+        <dl class="features single">
+          <div><dt>Talk in whole sentences</dt><dd>Whisper uses context to place punctuation and capitals. A complete thought comes out cleaner than a string of fragments.</dd></div>
+          <div><dt>Hold, then speak</dt><dd>Press the key a beat before you start talking and release just after you finish, so the first and last words are captured.</dd></div>
+          <div><dt>Add your vocabulary</dt><dd>Put names, product terms and acronyms in custom vocabulary so they're spelled your way every time.</dd></div>
+          <div><dt>Let cleanup handle the ums</dt><dd>Optional AI cleanup (your own Claude API key) removes filler words, fixes punctuation, and keeps only the correction when you change your mind mid-sentence. It never translates.</dd></div>
+          <div><dt>Use hands-free for drafts</dt><dd>Double-tap the key and talk through a whole section, then edit with the keyboard.</dd></div>
+          <div><dt>Pick the right model</dt><dd>Best is the most accurate and fast on Apple Silicon; Balanced is a good default elsewhere. Fastest is English only.</dd></div>
+          <div><dt>Mind the microphone</dt><dd>A headset or a decent mic close to you helps more than speaking slowly.</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vt-lang">
+      <div class="container">
+        <h2 id="vt-lang">Voice typing in other languages</h2>
+        <div class="prose">
+          <p>Vurb's multilingual models understand 90+ languages and detect them automatically, so you can switch between English and Spanish, for example, without changing a setting. It types what you said in the language you said it; it doesn't translate.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vt-faq">
+      <div class="container">
+        <h2 id="vt-faq">Questions about voice typing</h2>
+        <div class="faq">
+          <details>
+            <summary>Does voice typing add punctuation?</summary>
+            <p>Whisper usually adds punctuation and capitalization from context. For tidier results, optional AI cleanup fixes punctuation and removes filler words using your own Claude API key.</p>
+          </details>
+          <details>
+            <summary>Can I correct myself mid-sentence?</summary>
+            <p>With AI cleanup on, saying something like “no wait, I mean Thursday” keeps only the correction. Without it, Vurb types what you said, and you can press Esc before letting go to start over.</p>
+          </details>
+          <details>
+            <summary>Does it work in every app?</summary>
+            <p>It types into whatever has focus, so it works in almost any app with a text cursor. If an app doesn't accept typed text, the dictation is still saved in your history to copy.</p>
+          </details>
+          <details>
+            <summary>How is this different from my computer's built-in dictation?</summary>
+            <p>Built-in dictation varies by operating system and version. Vurb works the same way on Mac, Windows and Linux: one key, local Whisper models you choose, custom vocabulary, and searchable history.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="vt-related">
+      <div class="container">
+        <h2 id="vt-related">Related</h2>
+        <ul class="related-links"><li><a href="features.html">All features</a></li><li><a href="for/accessibility.html">Voice typing to type less</a></li><li><a href="for/writers.html">Dictation for writers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li></ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Start voice typing</h2>
+          <p class="muted">Free to start. macOS, Windows and Linux.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="download.html"><span data-download-label>Download Vurb</span></a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <noscript class="static-nav"><nav aria-label="Site pages"><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="use-cases.html">Use cases</a></li><li><a href="business.html">Business</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="security.html">Privacy and security</a></li><li><a href="compare.html">Compare</a></li><li><a href="download.html">Download</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">What&#x27;s new</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="for/developers.html">Developers</a></li><li><a href="for/writers.html">Writers &amp; creators</a></li><li><a href="for/sales.html">Sales</a></li><li><a href="for/support.html">Customer support</a></li><li><a href="for/students.html">Students</a></li><li><a href="for/legal.html">Lawyers</a></li><li><a href="for/accessibility.html">Accessibility</a></li><li><a href="for/leaders.html">Founders &amp; managers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li><li><a href="voice-typing.html">Voice typing in any app</a></li><li><a href="free-dictation-software.html">Free dictation software</a></li></ul></nav></noscript>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

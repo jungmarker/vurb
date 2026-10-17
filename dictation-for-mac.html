@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dictation app for Mac: voice typing on macOS | Vurb</title>
+  <meta name="description" content="Vurb is a dictation app for Mac: hold fn, talk, and your words are typed in any app. On-device Whisper, fast on Apple Silicon, works offline. macOS 13+, Apple Silicon and Intel.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vurb">
+  <meta property="og:title" content="Dictation app for Mac: voice typing on macOS | Vurb">
+  <meta property="og:description" content="Vurb is a dictation app for Mac: hold fn, talk, and your words are typed in any app. On-device Whisper, fast on Apple Silicon, works offline. macOS 13+, Apple Silicon and Intel.">
+  <meta property="og:image" content="https://vurb.me/assets/og.png">
+  <meta property="og:url" content="https://vurb.me/dictation-for-mac.html">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dictation app for Mac: voice typing on macOS | Vurb">
+  <meta name="twitter:description" content="Vurb is a dictation app for Mac: hold fn, talk, and your words are typed in any app. On-device Whisper, fast on Apple Silicon, works offline. macOS 13+, Apple Silicon and Intel.">
+  <meta name="twitter:image" content="https://vurb.me/assets/og.png">
+  <link rel="canonical" href="https://vurb.me/dictation-for-mac.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which Macs does Vurb support?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Macs running macOS 13 or later, with Apple Silicon (M1 and newer) or Intel chips; there is a download for each. Apple Silicon Macs run the Best speech model quickly and use it by default; Intel Macs start on the Balanced model."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which key do I hold on a Mac?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The fn (Globe) key by default. You can switch to Right Option, Left Option, Right Command, Right or Left Control, or Right Shift in settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does Vurb need Accessibility permission?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "macOS only lets an app type into other apps if you allow it under Privacy & Security → Accessibility. Without it, Vurb copies the text to your clipboard instead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does dictation on Mac work offline?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. After the speech model has downloaded, transcription runs entirely on your Mac."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://vurb.me/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Dictation for Mac",
+     "item": "https://vurb.me/dictation-for-mac.html"
+    }
+   ]
+  }
+ ]
+}
+  </script>
+</head>
+<body>
+  <script src="layout.js"></script>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>A dictation app for Mac that types in any app</h1>
+        <p class="lede">Hold the fn key, say what you want to write, and let go. Vurb types it wherever your cursor is on macOS. Speech to text runs on your Mac with Whisper, so it's private and works offline.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="mac-how">
+      <div class="container">
+        <h2 id="mac-how">How voice typing on Mac works with Vurb</h2>
+        <div class="prose">
+          <p>Vurb runs in the background. Click into any text field — an email, a message, a note, a browser tab, your code editor — then hold your dictation key. A small pill appears at the bottom of the screen while it listens. When you let go, Vurb transcribes the recording and types the text at your cursor.</p>
+          <p>The default key on a Mac is <kbd>fn</kbd> (the Globe key on newer keyboards). If you use fn for something else, pick Right Option, Left Option, Right Command, Control or Right Shift instead. Double-tap the key to dictate hands-free for longer passages, and tap it again to stop. Press <kbd>Esc</kbd> while recording to throw the recording away.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="mac-speed">
+      <div class="container">
+        <h2 id="mac-speed">Fast on Apple Silicon</h2>
+        <div class="prose">
+          <p>Vurb uses OpenAI's Whisper speech model through whisper.cpp, running locally. On an M-series Mac, the Best model transcribes a 12-second clip in about 0.3 seconds, so text appears almost as soon as you let go of the key.</p>
+          <p>Apple Silicon Macs start with the Best model (574 MB); other computers start with Balanced (190 MB), which is lighter. You can switch between Fastest (English only), Fast, Balanced and Best at any time in settings. Every model except Fastest understands 90+ languages and detects them automatically.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="mac-setup">
+      <div class="container">
+        <h2 id="mac-setup">Setting it up on macOS</h2>
+        <ol class="ol-steps">
+          <li><strong>Download and open Vurb.</strong> It needs macOS 13 or later. The beta isn't code-signed yet, so the first time, go to System Settings → Privacy &amp; Security and click <strong>Open Anyway</strong>.</li>
+          <li><strong>Allow the microphone</strong> when macOS asks.</li>
+          <li><strong>Allow Accessibility</strong> under System Settings → Privacy &amp; Security → Accessibility. This lets Vurb type into other apps. Without it, the text is copied to your clipboard so you can paste it.</li>
+          <li><strong>Let the speech model download.</strong> After that, dictation works offline.</li>
+          <li><strong>Hold fn and talk.</strong> Turn on launch at login if you want it ready every time you start your Mac.</li>
+        </ol>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="mac-private">
+      <div class="container">
+        <h2 id="mac-private">Private by default</h2>
+        <div class="prose">
+          <p>Your audio never leaves your Mac. It's transcribed on the device and discarded, and your history and stats stay in Vurb's local folder. Optional AI cleanup, which fixes punctuation and removes filler words, sends only text to Anthropic using your own API key, and it's off until you turn it on. Details are on the <a href="security.html">privacy and security page</a>.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="mac-faq">
+      <div class="container">
+        <h2 id="mac-faq">Questions about dictation on Mac</h2>
+        <div class="faq">
+          <details>
+            <summary>Which Macs does Vurb support?</summary>
+            <p>Macs running macOS 13 or later, with Apple Silicon (M1 and newer) or Intel chips; there is a download for each. Apple Silicon Macs run the Best speech model quickly and use it by default; Intel Macs start on the Balanced model.</p>
+          </details>
+          <details>
+            <summary>Which key do I hold on a Mac?</summary>
+            <p>The fn (Globe) key by default. You can switch to Right Option, Left Option, Right Command, Right or Left Control, or Right Shift in settings.</p>
+          </details>
+          <details>
+            <summary>Why does Vurb need Accessibility permission?</summary>
+            <p>macOS only lets an app type into other apps if you allow it under Privacy &amp; Security → Accessibility. Without it, Vurb copies the text to your clipboard instead.</p>
+          </details>
+          <details>
+            <summary>Does dictation on Mac work offline?</summary>
+            <p>Yes. After the speech model has downloaded, transcription runs entirely on your Mac.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="mac-related">
+      <div class="container">
+        <h2 id="mac-related">Related</h2>
+        <ul class="related-links"><li><a href="features.html">All features</a></li><li><a href="download.html">Download and system requirements</a></li><li><a href="for/developers.html">Voice to text for developers</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li></ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Download Vurb for Mac</h2>
+          <p class="muted">Free to start. macOS 13 or later.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="download.html"><span data-download-label>Download Vurb</span></a>
+          <a class="quiet-link" href="pricing.html">See pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <noscript class="static-nav"><nav aria-label="Site pages"><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="use-cases.html">Use cases</a></li><li><a href="business.html">Business</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="security.html">Privacy and security</a></li><li><a href="compare.html">Compare</a></li><li><a href="download.html">Download</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="support.html">Support</a></li><li><a href="changelog.html">What&#x27;s new</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="for/developers.html">Developers</a></li><li><a href="for/writers.html">Writers &amp; creators</a></li><li><a href="for/sales.html">Sales</a></li><li><a href="for/support.html">Customer support</a></li><li><a href="for/students.html">Students</a></li><li><a href="for/legal.html">Lawyers</a></li><li><a href="for/accessibility.html">Accessibility</a></li><li><a href="for/leaders.html">Founders &amp; managers</a></li><li><a href="dictation-for-mac.html">Dictation for Mac</a></li><li><a href="dictation-for-windows.html">Voice to text for Windows</a></li><li><a href="dictation-for-linux.html">Speech to text for Linux</a></li><li><a href="offline-dictation.html">Offline, private dictation</a></li><li><a href="voice-typing.html">Voice typing in any app</a></li><li><a href="free-dictation-software.html">Free dictation software</a></li></ul></nav></noscript>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
