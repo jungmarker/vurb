@@ -19,9 +19,9 @@ window.VURB_CONFIG = {
   growthMinSeats: 3,
 
   checkout: {
-    proMonthly: "#",
-    proYearly: "#",
-    growth: "#", // "Start team trial"
+    proMonthly: "https://vurb.lemonsqueezy.com/checkout/buy/2a7b4bf0-0e39-4d5f-9f28-4750e3af101b?enabled=2258224",
+    proYearly: "https://vurb.lemonsqueezy.com/checkout/buy/2a7b4bf0-0e39-4d5f-9f28-4750e3af101b?enabled=2258225",
+    growth: "https://vurb.lemonsqueezy.com/checkout/buy/4d2001b9-9781-49c5-bf6a-e861ab71e696?quantity=3", // team checkout, starts at 3 seats
     enterprise: "mailto:sales@vurb.me", // "Talk to sales"
   },
 
